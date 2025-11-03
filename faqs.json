@@ -11,7 +11,10 @@
       "fundamentals",
       "introduction"
     ],
-    "order": 1
+    "order": 1,
+    "views": 0,
+    "helpful": 0,
+    "chapterId": null
   },
   {
     "question": "What's the difference between AI, Machine Learning, and Deep Learning?",
@@ -26,7 +29,10 @@
       "hierarchy",
       "comparison"
     ],
-    "order": 2
+    "order": 2,
+    "views": 0,
+    "helpful": 0,
+    "chapterId": null
   },
   {
     "question": "What are the main types of Machine Learning?",
@@ -41,7 +47,10 @@
       "types",
       "algorithms"
     ],
-    "order": 3
+    "order": 3,
+    "views": 0,
+    "helpful": 0,
+    "chapterId": null
   },
   {
     "question": "What is the difference between training and testing data?",
@@ -56,7 +65,10 @@
       "evaluation",
       "generalization"
     ],
-    "order": 4
+    "order": 4,
+    "views": 0,
+    "helpful": 0,
+    "chapterId": null
   },
   {
     "question": "What is overfitting in Machine Learning?",
@@ -71,7 +83,10 @@
       "regularization",
       "validation"
     ],
-    "order": 5
+    "order": 5,
+    "views": 0,
+    "helpful": 0,
+    "chapterId": null
   },
   {
     "question": "What is the difference between classification and regression?",
@@ -86,7 +101,10 @@
       "prediction types",
       "algorithms"
     ],
-    "order": 6
+    "order": 6,
+    "views": 0,
+    "helpful": 0,
+    "chapterId": null
   },
   {
     "question": "What is feature engineering?",
@@ -101,7 +119,10 @@
       "model performance",
       "data transformation"
     ],
-    "order": 7
+    "order": 7,
+    "views": 0,
+    "helpful": 0,
+    "chapterId": null
   },
   {
     "question": "What is cross-validation?",
@@ -116,7 +137,10 @@
       "validation",
       "hyperparameter tuning"
     ],
-    "order": 8
+    "order": 8,
+    "views": 0,
+    "helpful": 0,
+    "chapterId": null
   },
   {
     "question": "What is Linear Regression?",
@@ -131,7 +155,10 @@
       "regression",
       "mathematics"
     ],
-    "order": 9
+    "order": 9,
+    "views": 0,
+    "helpful": 0,
+    "chapterId": null
   },
   {
     "question": "What is Gradient Descent?",
@@ -146,7 +173,10 @@
       "learning rate",
       "algorithms"
     ],
-    "order": 10
+    "order": 10,
+    "views": 0,
+    "helpful": 0,
+    "chapterId": null
   },
   {
     "question": "What is the difference between cost function and loss function?",
@@ -161,7 +191,10 @@
       "optimization",
       "terminology"
     ],
-    "order": 11
+    "order": 11,
+    "views": 0,
+    "helpful": 0,
+    "chapterId": null
   },
   {
     "question": "What is the learning rate in Gradient Descent?",
@@ -176,7 +209,10 @@
       "convergence",
       "gradient descent"
     ],
-    "order": 12
+    "order": 12,
+    "views": 0,
+    "helpful": 0,
+    "chapterId": null
   },
   {
     "question": "What is the difference between Linear Regression and Polynomial Regression?",
@@ -191,7 +227,10 @@
       "model complexity",
       "overfitting"
     ],
-    "order": 13
+    "order": 13,
+    "views": 0,
+    "helpful": 0,
+    "chapterId": null
   },
   {
     "question": "What is multicollinearity in regression?",
@@ -206,7 +245,10 @@
       "VIF",
       "model interpretation"
     ],
-    "order": 14
+    "order": 14,
+    "views": 0,
+    "helpful": 0,
+    "chapterId": null
   },
   {
     "question": "What is the difference between Batch Gradient Descent and Stochastic Gradient Descent?",
@@ -221,7 +263,10 @@
       "optimization",
       "algorithms"
     ],
-    "order": 15
+    "order": 15,
+    "views": 0,
+    "helpful": 0,
+    "chapterId": null
   },
   {
     "question": "What is Classification in Machine Learning?",
@@ -236,7 +281,10 @@
       "categories",
       "algorithms"
     ],
-    "order": 16
+    "order": 16,
+    "views": 0,
+    "helpful": 0,
+    "chapterId": null
   },
   {
     "question": "What is Logistic Regression?",
@@ -251,7 +299,10 @@
       "probability",
       "binary classification"
     ],
-    "order": 17
+    "order": 17,
+    "views": 0,
+    "helpful": 0,
+    "chapterId": null
   },
   {
     "question": "What is the Sigmoid function?",
@@ -266,7 +317,10 @@
       "probability",
       "mathematics"
     ],
-    "order": 18
+    "order": 18,
+    "views": 0,
+    "helpful": 0,
+    "chapterId": null
   },
   {
     "question": "What is a Confusion Matrix?",
@@ -281,7 +335,10 @@
       "false positives",
       "model assessment"
     ],
-    "order": 19
+    "order": 19,
+    "views": 0,
+    "helpful": 0,
+    "chapterId": null
   },
   {
     "question": "What is Precision and Recall?",
@@ -296,7 +353,10 @@
       "classification",
       "trade-off"
     ],
-    "order": 20
+    "order": 20,
+    "views": 0,
+    "helpful": 0,
+    "chapterId": null
   },
   {
     "question": "What is the ROC curve and AUC?",
@@ -311,7 +371,10 @@
       "classification",
       "threshold"
     ],
-    "order": 21
+    "order": 21,
+    "views": 0,
+    "helpful": 0,
+    "chapterId": null
   },
   {
     "question": "What is the difference between One-vs-Rest and One-vs-One classification?",
@@ -326,7 +389,10 @@
       "strategies",
       "algorithms"
     ],
-    "order": 22
+    "order": 22,
+    "views": 0,
+    "helpful": 0,
+    "chapterId": null
   },
   {
     "question": "What is a Neural Network?",
@@ -341,7 +407,10 @@
       "layers",
       "brain-inspired"
     ],
-    "order": 23
+    "order": 23,
+    "views": 0,
+    "helpful": 0,
+    "chapterId": null
   },
   {
     "question": "What is a Perceptron?",
@@ -356,7 +425,10 @@
       "linear separability",
       "history"
     ],
-    "order": 24
+    "order": 24,
+    "views": 0,
+    "helpful": 0,
+    "chapterId": null
   },
   {
     "question": "What is an Activation Function?",
@@ -371,7 +443,10 @@
       "sigmoid",
       "neural networks"
     ],
-    "order": 25
+    "order": 25,
+    "views": 0,
+    "helpful": 0,
+    "chapterId": null
   },
   {
     "question": "What is Backpropagation?",
@@ -386,7 +461,10 @@
       "chain rule",
       "neural networks"
     ],
-    "order": 26
+    "order": 26,
+    "views": 0,
+    "helpful": 0,
+    "chapterId": null
   },
   {
     "question": "What is the difference between Feedforward and Recurrent Neural Networks?",
@@ -401,7 +479,10 @@
       "sequential data",
       "architecture"
     ],
-    "order": 27
+    "order": 27,
+    "views": 0,
+    "helpful": 0,
+    "chapterId": null
   },
   {
     "question": "What are the vanishing and exploding gradient problems?",
@@ -416,7 +497,10 @@
       "training problems",
       "solutions"
     ],
-    "order": 28
+    "order": 28,
+    "views": 0,
+    "helpful": 0,
+    "chapterId": null
   },
   {
     "question": "What is the Universal Approximation Theorem?",
@@ -431,7 +515,10 @@
       "function approximation",
       "mathematical foundations"
     ],
-    "order": 29
+    "order": 29,
+    "views": 0,
+    "helpful": 0,
+    "chapterId": null
   },
   {
     "question": "What is a Convolutional Neural Network (CNN)?",
@@ -446,7 +533,10 @@
       "image processing",
       "deep learning"
     ],
-    "order": 30
+    "order": 30,
+    "views": 0,
+    "helpful": 0,
+    "chapterId": null
   },
   {
     "question": "What is a convolution operation in CNNs?",
@@ -461,7 +551,10 @@
       "feature extraction",
       "CNN operations"
     ],
-    "order": 31
+    "order": 31,
+    "views": 0,
+    "helpful": 0,
+    "chapterId": null
   },
   {
     "question": "What is Pooling in CNNs?",
@@ -476,7 +569,10 @@
       "downsampling",
       "CNN"
     ],
-    "order": 32
+    "order": 32,
+    "views": 0,
+    "helpful": 0,
+    "chapterId": null
   },
   {
     "question": "What are the differences between CNN and traditional neural networks?",
@@ -491,7 +587,10 @@
       "parameter sharing",
       "spatial structure"
     ],
-    "order": 33
+    "order": 33,
+    "views": 0,
+    "helpful": 0,
+    "chapterId": null
   },
   {
     "question": "What is padding in CNNs and why is it important?",
@@ -506,7 +605,10 @@
       "border handling",
       "spatial dimensions"
     ],
-    "order": 34
+    "order": 34,
+    "views": 0,
+    "helpful": 0,
+    "chapterId": null
   },
   {
     "question": "What is stride in CNNs?",
@@ -521,7 +623,10 @@
       "downsampling",
       "spatial resolution"
     ],
-    "order": 35
+    "order": 35,
+    "views": 0,
+    "helpful": 0,
+    "chapterId": null
   },
   {
     "question": "What are the famous CNN architectures and their contributions?",
@@ -537,7 +642,10 @@
       "ResNet",
       "history"
     ],
-    "order": 36
+    "order": 36,
+    "views": 0,
+    "helpful": 0,
+    "chapterId": null
   },
   {
     "question": "What is a Recurrent Neural Network (RNN)?",
@@ -552,7 +660,10 @@
       "memory",
       "time series"
     ],
-    "order": 37
+    "order": 37,
+    "views": 0,
+    "helpful": 0,
+    "chapterId": null
   },
   {
     "question": "What is Backpropagation Through Time (BPTT)?",
@@ -567,7 +678,10 @@
       "gradients",
       "sequential learning"
     ],
-    "order": 38
+    "order": 38,
+    "views": 0,
+    "helpful": 0,
+    "chapterId": null
   },
   {
     "question": "What is LSTM and how does it solve vanishing gradients?",
@@ -582,7 +696,10 @@
       "cell state",
       "vanishing gradients"
     ],
-    "order": 39
+    "order": 39,
+    "views": 0,
+    "helpful": 0,
+    "chapterId": null
   },
   {
     "question": "What is the difference between LSTM and GRU?",
@@ -597,7 +714,10 @@
       "comparison",
       "RNN architectures"
     ],
-    "order": 40
+    "order": 40,
+    "views": 0,
+    "helpful": 0,
+    "chapterId": null
   },
   {
     "question": "What is a Bidirectional RNN?",
@@ -612,7 +732,10 @@
       "NLP",
       "sequence processing"
     ],
-    "order": 41
+    "order": 41,
+    "views": 0,
+    "helpful": 0,
+    "chapterId": null
   },
   {
     "question": "What are the applications of RNNs in NLP?",
@@ -627,6 +750,9 @@
       "machine translation",
       "text processing"
     ],
-    "order": 42
+    "order": 42,
+    "views": 0,
+    "helpful": 0,
+    "chapterId": null
   }
 ]

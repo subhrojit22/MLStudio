@@ -168,6 +168,15 @@ export default function FAQPage() {
     }
   }
 
+  const totalViews = useMemo(() => {
+    return faqs.reduce((sum, faq) => sum + (faq.views || 0), 0)
+  }, [faqs])
+
+  const totalHelpful = useMemo(() => {
+    return faqs.reduce((sum, faq) => sum + (faq.helpful || 0), 0)
+  }, [faqs])
+
+
   if (loading) {
     return (
       <div className="container mx-auto px-4 py-8">
@@ -222,7 +231,7 @@ export default function FAQPage() {
         <Card>
           <CardContent className="p-4 text-center">
             <div className="text-2xl font-bold text-primary">
-              {faqs.reduce((sum, faq) => sum + faq.views, 0)}
+              {totalViews}
             </div>
             <div className="text-sm text-muted-foreground">Total Views</div>
           </CardContent>
@@ -230,7 +239,7 @@ export default function FAQPage() {
         <Card>
           <CardContent className="p-4 text-center">
             <div className="text-2xl font-bold text-primary">
-              {faqs.reduce((sum, faq) => sum + faq.helpful, 0)}
+              {totalHelpful}
             </div>
             <div className="text-sm text-muted-foreground">Helpful Votes</div>
           </CardContent>
