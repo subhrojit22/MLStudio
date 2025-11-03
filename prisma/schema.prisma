@@ -1,0 +1,296 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id            String   @id @default(cuid())
+  email         String   @unique
+  name          String?
+  role          Role     @default(STUDENT)
+  hashedPassword String?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  
+  // Relations
+  progress      Progress[]
+  quizAttempts  QuizAttempt[]
+  exerciseSubmissions ExerciseSubmission[]
+  capstoneSubmissions CapstoneSubmission[]
+  
+  @@map("users")
+}
+
+model Chapter {
+  id          String   @id @default(cuid())
+  title       String
+  description String?
+  order       Int
+  category    String   // "ml-basics", "deep-learning", "generative-ai"
+  objectives  String?  // JSON string of learning objectives array
+  quickRead   String?  // 300-600 word introduction
+  content     String?  // Full content (markdown)
+  notebookUrl String?  // Link to Colab/Binder notebook
+  timeEstimate Int     // Estimated minutes to complete
+  isPublished Boolean  @default(false)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  
+  // Relations
+  exercises   Exercise[]
+  quizzes     Quiz[]
+  progress    Progress[]
+  resources   ChapterResource[]
+  faqs        FAQ[]
+  subtopics   Subtopic[]
+  capstonePrerequisites CapstonePrerequisite[]
+  
+  @@map("chapters")
+}
+
+model Subtopic {
+  id          String   @id @default(cuid())
+  chapterId   String
+  title       String
+  description String?
+  order       Int
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  
+  // Relations
+  chapter     Chapter  @relation(fields: [chapterId], references: [id], onDelete: Cascade)
+  faqs        FAQ[]
+  
+  @@map("subtopics")
+}
+
+model Exercise {
+  id           String       @id @default(cuid())
+  chapterId    String
+  title        String
+  description  String
+  type         ExerciseType
+  difficulty   Difficulty   @default(PRACTICE)
+  starterCode  String?      // Code template for users
+  solution     String?      // Reference solution
+  testCases    String?      // JSON string of test cases array
+  hints        String?      // JSON string of hints array
+  order        Int
+  createdAt    DateTime     @default(now())
+  updatedAt    DateTime     @updatedAt
+  
+  // Relations
+  chapter      Chapter      @relation(fields: [chapterId], references: [id], onDelete: Cascade)
+  submissions  ExerciseSubmission[]
+  
+  @@map("exercises")
+}
+
+model Quiz {
+  id          String   @id @default(cuid())
+  chapterId   String
+  title       String
+  description String?
+  questions   String   // JSON array of quiz questions
+  timeLimit   Int?     // Time limit in minutes
+  passingScore Int     @default(70) // Passing score percentage
+  order       Int
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  
+  // Relations
+  chapter     Chapter     @relation(fields: [chapterId], references: [id], onDelete: Cascade)
+  attempts    QuizAttempt[]
+  
+  @@map("quizzes")
+}
+
+model Progress {
+  id                String   @id @default(cuid())
+  userId            String
+  chapterId         String
+  sectionsCompleted String? // JSON string of completed section IDs array
+  score             Int?     // Overall score for the chapter
+  timeSpent         Int      // Time spent in minutes
+  lastActive        DateTime @default(now())
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+  
+  // Relations
+  user              User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  chapter           Chapter  @relation(fields: [chapterId], references: [id], onDelete: Cascade)
+  
+  @@unique([userId, chapterId])
+  @@map("progress")
+}
+
+model QuizAttempt {
+  id          String   @id @default(cuid())
+  userId      String
+  quizId      String
+  answers     String   // JSON array of user answers
+  score       Int      // Score percentage
+  passed      Boolean
+  timeSpent   Int      // Time spent in seconds
+  completedAt DateTime @default(now())
+  
+  // Relations
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  quiz        Quiz     @relation(fields: [quizId], references: [id], onDelete: Cascade)
+  
+  @@map("quiz_attempts")
+}
+
+model ExerciseSubmission {
+  id           String   @id @default(cuid())
+  userId       String
+  exerciseId   String
+  code         String   // Submitted code
+  result       String?  // Execution result
+  passed       Boolean
+  feedback     String?  // Auto-generated feedback
+  attempts     Int      @default(1)
+  submittedAt  DateTime @default(now())
+  
+  // Relations
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  exercise     Exercise @relation(fields: [exerciseId], references: [id], onDelete: Cascade)
+  
+  @@map("exercise_submissions")
+}
+
+model Capstone {
+  id            String   @id @default(cuid())
+  title         String
+  description   String
+  templateRepo  String?  // GitHub repo URL
+  datasetUrl    String?  // Dataset URL
+  rubric        String?  // JSON rubric
+  difficulty    Difficulty @default(CHALLENGE)
+  tags          String?  // JSON string of tags array
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  
+  // Relations
+  submissions   CapstoneSubmission[]
+  prerequisites  CapstonePrerequisite[]
+  
+  @@map("capstones")
+}
+
+model CapstonePrerequisite {
+  id         String   @id @default(cuid())
+  capstoneId String
+  chapterId  String
+  
+  // Relations
+  capstone   Capstone @relation(fields: [capstoneId], references: [id], onDelete: Cascade)
+  chapter    Chapter  @relation(fields: [chapterId], references: [id], onDelete: Cascade)
+  
+  @@unique([capstoneId, chapterId])
+  @@map("capstone_prerequisites")
+}
+
+model CapstoneSubmission {
+  id           String   @id @default(cuid())
+  userId       String
+  capstoneId   String
+  repoUrl      String?  // User's solution repo
+  description  String
+  status       SubmissionStatus @default(PENDING)
+  feedback     String?
+  score        Int?
+  submittedAt  DateTime @default(now())
+  reviewedAt   DateTime?
+  
+  // Relations
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  capstone     Capstone @relation(fields: [capstoneId], references: [id], onDelete: Cascade)
+  
+  @@map("capstone_submissions")
+}
+
+model FAQ {
+  id            String   @id @default(cuid())
+  chapterId     String?
+  subtopicId    String?
+  question      String
+  easyAnswer    String   // Simple, beginner-friendly answer
+  detailedAnswer String  // Comprehensive answer with examples
+  category      String   // "general", "technical", "practical", "advanced"
+  difficulty    Difficulty @default(PRACTICE)
+  tags          String?  // JSON string of tags array
+  order         Int?
+  views         Int      @default(0)
+  helpful       Int      @default(0)
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  
+  // Relations
+  chapter       Chapter? @relation(fields: [chapterId], references: [id], onDelete: SetNull)
+  subtopic      Subtopic? @relation(fields: [subtopicId], references: [id], onDelete: SetNull)
+  
+  @@map("faqs")
+}
+
+model ChapterResource {
+  id        String   @id @default(cuid())
+  chapterId String
+  title     String
+  type      ResourceType
+  url       String
+  description String?
+  order     Int
+  createdAt DateTime @default(now())
+  
+  // Relations
+  chapter   Chapter  @relation(fields: [chapterId], references: [id], onDelete: Cascade)
+  
+  @@map("chapter_resources")
+}
+
+// Enums
+enum Role {
+  STUDENT
+  INSTRUCTOR
+  ADMIN
+}
+
+enum ExerciseType {
+  CODING
+  MULTIPLE_CHOICE
+  SHORT_ANSWER
+  PROJECT
+}
+
+enum Difficulty {
+  PRACTICE
+  CHALLENGE
+  CAPSTONE
+}
+
+enum SubmissionStatus {
+  PENDING
+  REVIEWED
+  APPROVED
+  REJECTED
+}
+
+enum ResourceType {
+  READING
+  VIDEO
+  PAPER
+  TOOL
+  DATASET
+  CODE
+}
