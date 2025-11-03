@@ -804,7 +804,7 @@ export default function TokenizerPlayground() {
                           transition={{ duration: 0.3 }}
                         >
                           <div className="flex items-center justify-between mb-2">
-                            <h4 className="text-sm font-medium text-muted-foreground">
+                            <h4 className="text-sm font-medium text-muted-foreground break-words md:text-sm">
                               Token Embeddings (8-dimensional vectors):
                             </h4>
                             <Button
