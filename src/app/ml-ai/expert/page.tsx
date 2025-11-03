@@ -41,8 +41,8 @@ import { motion, AnimatePresence } from "framer-motion"
 // Scalability and Big Data ML Simulator
 const ScalabilitySimulator = () => {
   const [isSimulating, setIsSimulating] = useState(false)
-  const [dataSize, setDataSize] = useState(100) // GB
-  const [numNodes, setNumNodes] = useState(4)
+  const [dataSize, setDataSize] = useState([100]) // GB
+  const [numNodes, setNumNodes] = useState([4])
   const [processingTime, setProcessingTime] = useState(0)
   const [distributedStrategy, setDistributedStrategy] = useState('data-parallel')
 
@@ -56,7 +56,7 @@ const ScalabilitySimulator = () => {
     if (isSimulating) {
       const interval = setInterval(() => {
         // Simulate processing time based on strategy and scale
-        const baseTime = dataSize / numNodes
+        const baseTime = dataSize[0] / numNodes[0]
         const strategyMultiplier = {
           'data-parallel': 0.8,
           'model-parallel': 1.2,
@@ -103,7 +103,7 @@ const ScalabilitySimulator = () => {
           </Button>
           <div className="flex gap-4">
             <div>
-              <label className="text-sm font-medium">Data: {dataSize}GB</label>
+              <label className="text-sm font-medium">Data: {dataSize[0]}GB</label>
               <Slider
                 value={dataSize}
                 onValueChange={setDataSize}
@@ -115,7 +115,7 @@ const ScalabilitySimulator = () => {
               />
             </div>
             <div>
-              <label className="text-sm font-medium">Nodes: {numNodes}</label>
+              <label className="text-sm font-medium">Nodes: {numNodes[0]}</label>
               <Slider
                 value={numNodes}
                 onValueChange={setNumNodes}
@@ -170,7 +170,7 @@ const ScalabilitySimulator = () => {
               
               {/* Worker Nodes */}
               <div className="flex gap-4">
-                {Array.from({ length: numNodes }, (_, i) => (
+                {Array.from({ length: numNodes[0] }, (_, i) => (
                   <motion.div
                     key={i}
                     initial={{ scale: 0.8, opacity: 0 }}
@@ -200,7 +200,7 @@ const ScalabilitySimulator = () => {
               
               {/* Connections */}
               <svg className="absolute inset-0 pointer-events-none">
-                {Array.from({ length: numNodes }, (_, i) => (
+                {Array.from({ length: numNodes[0] }, (_, i) => (
                   <line
                     key={i}
                     x1="32"
@@ -222,7 +222,7 @@ const ScalabilitySimulator = () => {
           <div className="p-3 bg-blue-50 rounded-lg border-2 border-blue-200">
             <h5 className="font-semibold text-blue-800 mb-1">Throughput</h5>
             <div className="text-2xl font-bold text-blue-600">
-              {(dataSize * numNodes / 10).toFixed(0)} GB/s
+              {(dataSize[0] * numNodes[0] / 10).toFixed(0)} GB/s
             </div>
             <p className="text-xs text-blue-600">Peak performance</p>
           </div>
@@ -236,7 +236,7 @@ const ScalabilitySimulator = () => {
           <div className="p-3 bg-purple-50 rounded-lg border-2 border-purple-200">
             <h5 className="font-semibold text-purple-800 mb-1">Latency</h5>
             <div className="text-2xl font-bold text-purple-600">
-              {(100 / numNodes).toFixed(0)}ms
+              {(100 / numNodes[0]).toFixed(0)}ms
             </div>
             <p className="text-xs text-purple-600">Average response time</p>
           </div>

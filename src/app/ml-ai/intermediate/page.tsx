@@ -21,7 +21,7 @@ import {
   CheckCircle,
   AlertCircle,
   Info,
-  Scatter,
+  ScatterChart,
   Layers
 } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
@@ -286,7 +286,7 @@ const PCASimulator = () => {
     <Card className="border-2">
       <CardHeader>
         <CardTitle className="flex items-center gap-2">
-          <Scatter className="h-5 w-5" />
+          <ScatterChart className="h-5 w-5" />
           PCA Dimensionality Reduction
         </CardTitle>
         <CardDescription>
