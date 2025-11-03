@@ -1,5 +1,6 @@
 'use client'
 
+import BackButton from "@/components/BackButton"
 import { useState, useEffect, useRef, useCallback } from 'react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
@@ -150,8 +151,7 @@ export default function DimensionalityReductionPlayground() {
     switch (type) {
       case 'swiss-roll':
         // Swiss roll in 3D, then add extra dimensions
-        for (let i = 0;
-import BackButton from "@/components/BackButton" i < numPoints; i++) {
+        for (let i = 0; i < numPoints; i++) {
           const t = (i / numPoints) * 4 * Math.PI
           const noise = (Math.random() - 0.5) * 0.5
           

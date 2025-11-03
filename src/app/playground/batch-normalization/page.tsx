@@ -1,5 +1,6 @@
 'use client'
 
+import BackButton from "@/components/BackButton"
 import { useState, useEffect, useRef, useCallback } from 'react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
@@ -62,8 +63,7 @@ export default function BatchNormalizationPlayground() {
   const generateActivations = useCallback((size: number, mean: number, std: number, type: string): number[] => {
     const values: number[] = []
     
-    for (let i = 0;
-import BackButton from "@/components/BackButton" i < size; i++) {
+    for (let i = 0; i < size; i++) {
       let value = 0
       
       switch (type) {

@@ -1,5 +1,6 @@
 'use client'
 
+import BackButton from "@/components/BackButton"
 import { useState, useEffect, useRef, useCallback } from 'react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
@@ -103,8 +104,7 @@ interface DataPoint {
 
 interface Cluster {
   id: number
-  centroid: { x: number;
-import BackButton from "@/components/BackButton" y: number }
+  centroid: { x: number; y: number }
   points: DataPoint[]
   color: string
 }

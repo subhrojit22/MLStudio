@@ -1,5 +1,6 @@
 'use client'
 
+import BackButton from "@/components/BackButton"
 import { useState, useEffect, useRef, useCallback } from 'react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
@@ -22,8 +23,7 @@ interface OptimizationPoint {
 interface LossFunction {
   name: string
   calculate: (x: number, y: number) => number
-  gradient: (x: number, y: number) => { dx: number;
-import BackButton from "@/components/BackButton" dy: number }
+  gradient: (x: number, y: number) => { dx: number; dy: number }
   globalMinima: { x: number; y: number }
   range: { x: [number, number]; y: [number, number] }
 }

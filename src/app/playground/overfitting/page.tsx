@@ -1,5 +1,6 @@
 'use client'
 
+import BackButton from "@/components/BackButton"
 import { useState, useEffect, useRef, useCallback } from 'react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
@@ -54,8 +55,7 @@ export default function OverfittingExplorer() {
     switch (datasetType) {
       case 'polynomial':
         // Generate polynomial data: y = 0.5x^3 - 2x^2 + x + 2
-        for (let i = 0;
-import BackButton from "@/components/BackButton" i < trainSize + 10; i++) {
+        for (let i = 0; i < trainSize + 10; i++) {
           const x = (i / (trainSize + 10)) * 6 - 3
           const trueY = 0.5 * Math.pow(x, 3) - 2 * Math.pow(x, 2) + x + 2
           const noise = (Math.random() - 0.5) * 2 * noiseLevel

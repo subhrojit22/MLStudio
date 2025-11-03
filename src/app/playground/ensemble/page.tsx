@@ -1,5 +1,6 @@
 'use client'
 
+import BackButton from "@/components/BackButton"
 import { useState, useEffect, useRef, useCallback } from 'react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
@@ -148,8 +149,7 @@ export default function EnsemblePlayground() {
     switch (type) {
       case 'complex':
         // Complex decision boundary
-        for (let i = 0;
-import BackButton from "@/components/BackButton" i < numPoints; i++) {
+        for (let i = 0; i < numPoints; i++) {
           const x = Math.random() * 10 - 5
           const y = Math.random() * 10 - 5
           const label = (Math.sin(x) * Math.cos(y) > 0) ? 1 : 0

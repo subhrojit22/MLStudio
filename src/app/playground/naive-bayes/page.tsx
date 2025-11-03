@@ -1,5 +1,6 @@
 'use client'
 
+import BackButton from "@/components/BackButton"
 import { useState, useEffect, useRef, useCallback } from 'react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
@@ -149,8 +150,7 @@ export default function NaiveBayesPlayground() {
     switch (type) {
       case 'iris-like':
         // 3 classes with 2 features, similar to iris dataset
-        for (let i = 0;
-import BackButton from "@/components/BackButton" i < numPoints / 3; i++) {
+        for (let i = 0; i < numPoints / 3; i++) {
           points.push({
             features: [
               Math.random() * 2 + 4,  // Sepal length
