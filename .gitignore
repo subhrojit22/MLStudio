@@ -49,7 +49,7 @@ prompt
 server.log
 
 # database
-/db
+prisma/db
 
 # logs
 *.log

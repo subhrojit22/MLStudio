@@ -10,7 +10,9 @@
     "db:push": "prisma db push",
     "db:generate": "prisma generate",
     "db:migrate": "prisma migrate dev",
-    "db:reset": "prisma migrate reset"
+    "db:reset": "prisma migrate reset",
+    "seed": "tsx prisma/seed.ts",
+    "postinstall": "prisma db push && npm run seed"
   },
   "dependencies": {
     "@dnd-kit/core": "^6.3.1",

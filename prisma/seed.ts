@@ -1,4 +1,6 @@
 import { PrismaClient } from '@prisma/client'
+import fs from 'fs'
+import path from 'path'
 
 const prisma = new PrismaClient()
 
@@ -111,17 +113,51 @@ async function main() {
   console.log('Seeding database...')
 
   // Clear existing data
+  await prisma.fAQ.deleteMany({})
   await prisma.chapter.deleteMany()
-  console.log('Cleared existing chapters')
+  console.log('Cleared existing chapters and FAQs')
 
   // Insert sample chapters
-  for (const chapter of sampleChapters) {
-    await prisma.chapter.create({
-      data: chapter
-    })
+  await prisma.chapter.createMany({
+    data: sampleChapters
+  })
+  console.log('Sample chapters created successfully!')
+
+  // Seed FAQs from faqs.json
+  const faqData = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'faqs.json'), 'utf-8'));
+
+  const chapters = await prisma.chapter.findMany({
+    select: { id: true, title: true }
+  })
+  if (chapters.length === 0) {
+    console.log('No chapters found to associate FAQs with.')
+    return
   }
 
-  console.log('Sample chapters created successfully!')
+  let totalFAQs = 0
+  for (const chapterData of faqData) {
+    const chapter = chapters.find(c => c.title === chapterData.chapterTitle)
+    if (!chapter) {
+      console.log(`Chapter not found: ${chapterData.chapterTitle}`)
+      continue
+    }
+    for (const faq of chapterData.faqs) {
+      await prisma.fAQ.create({
+        data: {
+          chapterId: chapter.id,
+          question: faq.question,
+          easyAnswer: faq.easyAnswer,
+          detailedAnswer: faq.detailedAnswer,
+          category: faq.category,
+          difficulty: faq.difficulty,
+          tags: JSON.stringify(faq.tags),
+          order: totalFAQs + 1
+        }
+      })
+      totalFAQs++
+    }
+  }
+  console.log(`Successfully seeded ${totalFAQs} FAQs`)
 }
 
 main()
