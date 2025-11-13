@@ -5,127 +5,66 @@
       {
         "question": "What is Machine Learning?",
         "easyAnswer": "Machine Learning is a branch of AI that enables computers to learn from data without being explicitly programmed. Instead of writing rules, we let the system discover patterns in data and make predictions.",
-        "detailedAnswer": "Machine Learning is a subset of Artificial Intelligence that focuses on developing algorithms that can learn from and make predictions or decisions based on data. The core idea is to enable computers to learn automatically without human intervention or explicit programming. ML systems improve their performance on tasks through experience, making predictions or decisions based on patterns discovered in data. This represents a paradigm shift from traditional programming where rules are manually coded to systems that can adapt and improve based on the data they process.",
+        "detailedAnswer": "Machine Learning is a subset of Artificial Intelligence that focuses on developing algorithms that can \"learn\" the patterns of training data and, subsequently, make accurate inferences about new data. The core idea is to enable computers to learn automatically without human intervention or explicit programming. ML systems improve their performance on tasks through experience, making predictions or decisions based on patterns discovered in data. This represents a paradigm shift from traditional programming where rules are manually coded to systems that can adapt and improve based on the data they process.",
         "category": "general",
         "difficulty": "PRACTICE",
-        "tags": [
-          "machine learning",
-          "AI",
-          "fundamentals",
-          "introduction"
-        ],
-        "order": 1,
-        "views": 0,
-        "helpful": 0,
-        "chapterId": null
+        "tags": ["machine learning", "AI", "fundamentals", "introduction"]
       },
       {
         "question": "What's the difference between AI, Machine Learning, and Deep Learning?",
-        "easyAnswer": "AI is the broadest concept (making machines smart). ML is a subset of AI (learning from data). Deep Learning is a subset of ML (using neural networks). Think of it as Russian dolls: DL ⊂ ML ⊂ AI.",
-        "detailedAnswer": "These three concepts exist in a hierarchical relationship: Artificial Intelligence (AI) is the broadest concept, encompassing any technique that enables computers to mimic human intelligence and behavior. Machine Learning (ML) is a subset of AI that focuses on algorithms that can learn from data and make predictions without being explicitly programmed. Deep Learning is a particular kind of ML that employs artificial neural networks to process information and make complex judgments. The networks are designed to mirror the structure of the human brain, consisting of numerous layers of interconnected neurons that improve their understanding as they receive greater amounts of information. Deep learning is best optimized for processing high amounts of unstructured data such as images, audio, and text.",
+        "easyAnswer": "AI is the broad field of making machines smart. Machine Learning is a subset of AI that uses data to learn and make predictions. Deep Learning is a specialized type of Machine Learning that uses complex neural networks to solve even more advanced problems.",
+        "detailedAnswer": "Artificial Intelligence (AI) is the broader concept of creating intelligent machines that can simulate human thinking and behavior. Machine Learning (ML) is a specific application of AI where machines are trained to learn from data and make predictions or decisions without being explicitly programmed. Deep Learning is a subfield of machine learning that utilizes artificial neural networks with many layers (deep neural networks) to learn from vast amounts of data. This allows for solving more complex problems like image and speech recognition with higher accuracy.",
         "category": "general",
         "difficulty": "PRACTICE",
-        "tags": [
-          "AI",
-          "machine learning",
-          "deep learning",
-          "hierarchy",
-          "comparison"
-        ],
-        "order": 2,
-        "views": 0,
-        "helpful": 0,
-        "chapterId": null
+        "tags": ["AI", "machine learning", "deep learning", "hierarchy", "comparison"]
       },
       {
         "question": "What are the main types of Machine Learning?",
         "easyAnswer": "The three main types are: Supervised Learning (learning from labeled data), Unsupervised Learning (finding patterns in unlabeled data), and Reinforcement Learning (learning through trial and error with rewards).",
-        "detailedAnswer": "Machine learning is primarily divided into several core types: Supervised Learning trains models on labeled data to predict or classify new, unseen data. The algorithm learns from a dataset where the response is known, acting as a 'supervisor' to train the model. Common algorithms include Linear Regression, Logistic Regression, Decision Trees, Support Vector Machines, K-Nearest Neighbors, Naive Bayes, and Random Forest. Unsupervised Learning finds patterns or groups in unlabeled data, like clustering or dimensionality reduction. The algorithm works with unlabeled data and tries to figure out patterns and relationships on its own. Common techniques include K-Means Clustering, Hierarchical Clustering, and Principal Component Analysis (PCA). Reinforcement Learning learns through trial and error to maximize rewards, ideal for decision-making tasks. The agent continues to interact with the environment and receives feedback in the form of rewards or penalties for its actions.",
+        "detailedAnswer": "Machine learning is primarily divided into several core types:\n* **Supervised Learning:** This involves training models on labeled data to predict or classify new, unseen data. The algorithm learns from a dataset where the correct output is known, acting as a 'supervisor' to train the model. Common algorithms include Linear Regression, Logistic Regression, and Support Vector Machines.\n* **Unsupervised Learning:** This method finds patterns or groupings in unlabeled data, such as clustering or dimensionality reduction. The algorithm works with data that has not been labeled and tries to identify inherent structures.\n* **Reinforcement Learning:** This type of learning occurs through trial and error to maximize rewards and is ideal for decision-making tasks. An agent interacts with an environment and receives feedback in the form of rewards or penalties for its actions.",
         "category": "technical",
         "difficulty": "PRACTICE",
-        "tags": [
-          "supervised learning",
-          "unsupervised learning",
-          "reinforcement learning",
-          "types",
-          "algorithms"
-        ],
-        "order": 3,
-        "views": 0,
-        "helpful": 0,
-        "chapterId": null
+        "tags": ["supervised learning", "unsupervised learning", "reinforcement learning", "types", "algorithms"]
       },
       {
         "question": "What is the difference between training and testing data?",
-        "easyAnswer": "Training data is used to teach the model (like study materials). Testing data is used to evaluate how well the model learned (like an exam). We keep them separate to get an honest assessment of performance.",
-        "detailedAnswer": "Training data is the dataset used to teach the machine learning model by allowing it to learn patterns, relationships, and features. The model adjusts its parameters based on this data to minimize errors and improve predictions. Testing data is a separate dataset used to evaluate the model's performance after training. It provides an unbiased assessment of how well the model generalizes to new, unseen data. The testing dataset should never be used during the training phase to ensure the evaluation is fair and represents real-world performance. The typical split is 70-80% for training data and 20-30% for testing data, though this can vary based on the dataset size and specific requirements. This separation is crucial to avoid overfitting and ensure the model can generalize to new situations.",
+        "easyAnswer": "Training data is used to teach the machine learning model, while testing data is used to evaluate how well the model has learned and how it will perform on new, unseen data.",
+        "detailedAnswer": "In machine learning, the dataset is typically split into two main subsets:\n* **Training Data:** This is the portion of the data used to train the model. The model learns the underlying patterns and relationships from this data.\n* **Testing Data:** This is a separate portion of the data that the model has not seen before. It is used to evaluate the model's performance and its ability to generalize to new, unseen data. This helps in assessing the accuracy and effectiveness of the model.",
         "category": "practical",
         "difficulty": "PRACTICE",
-        "tags": [
-          "training data",
-          "testing data",
-          "data split",
-          "evaluation",
-          "generalization"
-        ],
-        "order": 4,
-        "views": 0,
-        "helpful": 0,
-        "chapterId": null
+        "tags": ["training data", "testing data", "data split", "evaluation", "generalization"]
       },
       {
         "question": "What is overfitting in Machine Learning?",
-        "easyAnswer": "Overfitting is when a model learns the training data too well, including noise and random fluctuations. It performs great on training data but poorly on new data because it 'memorized' instead of learning general patterns.",
-        "detailedAnswer": "Overfitting occurs when a machine learning model learns the training data too well, including its noise and random fluctuations, rather than learning the underlying patterns. An overfitted model performs exceptionally well on training data but poorly on new, unseen data because it has essentially 'memorized' the training examples rather than learning generalizable patterns. Signs of overfitting include very high training accuracy but low test accuracy, large gap between training and validation performance, and model complexity that is too high for the amount of training data. Ways to prevent overfitting include regularization techniques (L1/L2), cross-validation, early stopping, dropout, increasing training data, and reducing model complexity. Overfitting is one of the most common challenges in machine learning and addressing it is crucial for building models that perform well in real-world applications.",
+        "easyAnswer": "Overfitting is when a machine learning model learns the training data too well, including the noise and details, to the point that it performs poorly on new, unseen data.",
+        "detailedAnswer": "Overfitting is an undesirable behavior in machine learning where a model gives accurate predictions for the training data but not for new data. This happens when the model is too complex or has been trained for too long on the training data, causing it to memorize the data, including its noise and random fluctuations, rather than learning the underlying patterns. An overfit model has high variance and low bias. To detect overfitting, one can split the data into training and testing sets; if the model performs significantly better on the training set than on the testing set, it is likely overfitted.",
         "category": "technical",
         "difficulty": "CHALLENGE",
-        "tags": [
-          "overfitting",
-          "model complexity",
-          "generalization",
-          "regularization",
-          "validation"
-        ],
-        "order": 5,
-        "views": 0,
-        "helpful": 0,
-        "chapterId": null
+        "tags": ["overfitting", "model complexity", "generalization", "validation"]
       },
       {
         "question": "What is the difference between classification and regression?",
-        "easyAnswer": "Classification predicts categories (like spam/not spam or cat/dog/bird). Regression predicts continuous numbers (like house prices or temperature). Both are supervised learning but answer different types of questions.",
-        "detailedAnswer": "Both classification and regression are types of supervised learning problems, but they differ in the nature of their output: Classification involves predicting discrete categories or classes. The output is a categorical label from a predefined set of classes. Examples include spam detection (spam/not spam), disease diagnosis (healthy/diseased), and sentiment analysis (positive/negative/neutral). Regression involves predicting continuous numerical values. The output is a number on a continuous scale. Examples include predicting house prices, temperature forecasting, and estimating a person's age or salary. The choice between classification and regression depends on the nature of the target variable you're trying to predict. The algorithms and evaluation metrics used also differ significantly between these two types of problems.",
+        "easyAnswer": "Classification predicts a category or class (e.g., \"spam\" or \"not spam\"), while regression predicts a continuous numerical value (e.g., the price of a house).",
+        "detailedAnswer": "Classification and regression are both types of supervised machine learning tasks, but they differ in their output. A classification model predicts a discrete class label, sorting data points into predefined categories. For example, it can classify an email as either \"spam\" or \"not spam.\" In contrast, a regression model predicts a continuous numerical value. For instance, it might predict the price of a house based on its features.",
         "category": "technical",
         "difficulty": "PRACTICE",
-        "tags": [
-          "classification",
-          "regression",
-          "supervised learning",
-          "prediction types",
-          "algorithms"
-        ],
-        "order": 6,
-        "views": 0,
-        "helpful": 0,
-        "chapterId": null
+        "tags": ["classification", "regression", "supervised learning", "prediction types"]
       },
       {
         "question": "What is feature engineering?",
-        "easyAnswer": "Feature engineering is the process of creating new features or modifying existing ones to help the model learn better. It's like preparing ingredients before cooking - better ingredients lead to better results.",
-        "detailedAnswer": "Feature engineering is the process of creating new features or modifying existing ones to improve model performance. It involves: Creating New Features - Developing new variables that capture underlying patterns in the data more effectively, such as combining existing features or extracting information from raw data. Transforming Data - Converting raw data into more meaningful representations to enhance model interpretability, such as normalization, standardization, and encoding categorical variables. Feature Selection - Identifying the most relevant features using techniques like correlation analysis, recursive feature elimination, and feature importance scores. Effective feature engineering can significantly improve model accuracy and reduce training time by providing the model with more relevant and informative input data. It's often said that feature engineering is more art than science, requiring domain knowledge and creativity to create features that capture the underlying patterns in the data.",
+        "easyAnswer": "Feature engineering is the process of selecting, transforming, or creating the most suitable input variables (features) from raw data to improve the performance of a machine learning model.",
+        "detailedAnswer": "Feature engineering is a critical preprocessing step in machine learning that involves transforming raw data into a format that better represents the underlying problem to the predictive models. It requires a combination of data analysis, domain knowledge, and intuition to create features that make machine learning algorithms work more effectively. This process can include techniques like handling missing data, encoding categorical variables, scaling numerical features, and creating new features from existing ones.",
         "category": "practical",
         "difficulty": "CHALLENGE",
-        "tags": [
-          "feature engineering",
-          "data preprocessing",
-          "feature selection",
-          "model performance",
-          "data transformation"
-        ],
-        "order": 7,
-        "views": 0,
-        "helpful": 0,
-        "chapterId": null
+        "tags": ["feature engineering", "data preprocessing", "model performance"]
+      },
+      {
+        "question": "What is cross-validation?",
+        "easyAnswer": "Cross-validation is a technique to evaluate a machine learning model's performance by splitting the data into several parts, training the model on some parts, and testing it on the remaining part, then averaging the results.",
+        "detailedAnswer": "Cross-validation is a resampling procedure used to evaluate machine learning models on a limited data sample. The core idea is to partition the original dataset into a training set to train the model, and a test set to evaluate it. This process is repeated multiple times (the \"folds\"), with different partitions. The results from the folds are then averaged to produce a more robust estimate of the model's performance on unseen data.",
+        "category": "technical",
+        "difficulty": "CHALLENGE",
+        "tags": ["cross-validation", "model evaluation", "validation"]
       }
     ]
   },
@@ -133,130 +72,68 @@
     "chapterTitle": "Linear Regression & Gradient Descent",
     "faqs": [
       {
-        "question": "What is cross-validation?",
-        "easyAnswer": "Cross-validation is a technique to test how well a model will work on new data. It splits the data into multiple parts, trains on some parts and tests on others, then averages the results to get a more reliable performance estimate.",
-        "detailedAnswer": "Cross-validation is a statistical method used to estimate the skill of machine learning models on unseen data. It helps assess how well a model will generalize to an independent dataset and is essential for detecting overfitting. K-Fold Cross-Validation is the most common technique, where the dataset is divided into k equal subsets (folds). The model is trained k times, each time using k-1 folds for training and the remaining fold for validation. The final performance metric is the average across all k iterations. Benefits of cross-validation include providing a more reliable estimate of model performance, using all data for both training and validation, helping in hyperparameter tuning, and reducing variance in performance estimates. Cross-validation is particularly important when working with limited datasets, as it maximizes the use of available data while still providing unbiased performance estimates.",
-        "category": "technical",
-        "difficulty": "CHALLENGE",
-        "tags": [
-          "cross-validation",
-          "model evaluation",
-          "K-fold",
-          "validation",
-          "hyperparameter tuning"
-        ],
-        "order": 8,
-        "views": 0,
-        "helpful": 0,
-        "chapterId": null
-      },
-      {
         "question": "What is Linear Regression?",
-        "easyAnswer": "Linear Regression is a method to predict continuous values by finding a straight-line relationship between input features and the target variable. It's like drawing the best-fit line through scattered data points.",
-        "detailedAnswer": "Linear Regression is a supervised learning algorithm used to predict continuous numerical values by finding the relationship between input features and the target variable. It assumes a linear relationship exists between the independent variables (features) and the dependent variable (target). The model fits a straight line (or hyperplane in higher dimensions) to the data that minimizes the difference between predicted and actual values. The equation for simple linear regression is: y = β₀ + β₁x + ε, where y is the target variable, x is the input feature, β₀ is the intercept, β₁ is the slope, and ε is the error term. Linear Regression is widely used for prediction tasks like forecasting sales, predicting house prices, and estimating trends. It's valued for its simplicity, interpretability, and the fact that it serves as a foundation for understanding more complex machine learning algorithms.",
+        "easyAnswer": "Linear Regression is a machine learning algorithm that predicts a continuous value by finding the best straight-line relationship between the input features and the output.",
+        "detailedAnswer": "Linear regression is a fundamental supervised learning algorithm used for predicting a continuous dependent variable based on one or more independent variables. It assumes a linear relationship between the input variables (features) and the single output variable. The goal is to find the best-fitting straight line (or hyperplane in higher dimensions) that minimizes the difference between the predicted and actual values.",
         "category": "technical",
         "difficulty": "PRACTICE",
-        "tags": [
-          "linear regression",
-          "prediction",
-          "supervised learning",
-          "regression",
-          "mathematics"
-        ],
-        "order": 9,
-        "views": 0,
-        "helpful": 0,
-        "chapterId": null
+        "tags": ["linear regression", "supervised learning", "regression"]
       },
       {
         "question": "What is Gradient Descent?",
-        "easyAnswer": "Gradient Descent is an optimization algorithm that finds the best parameters for a model by taking small steps in the direction that reduces error the most. It's like walking downhill in the dark to find the lowest point.",
-        "detailedAnswer": "Gradient Descent is an optimization algorithm used to minimize the cost function and find the optimal parameters for a machine learning model. It iteratively adjusts the model's parameters in the direction that most reduces the error. The algorithm works by: Starting with random parameter values, computing the gradient (derivative) of the cost function, updating parameters in the opposite direction of the gradient, and repeating until convergence or a maximum number of iterations. The update rule is: θ = θ - α∇J(θ), where θ represents the parameters, α is the learning rate, and ∇J(θ) is the gradient of the cost function. Gradient Descent is fundamental to training many machine learning algorithms, especially neural networks, and understanding it is crucial for grasping how models learn from data.",
+        "easyAnswer": "Gradient Descent is an optimization algorithm used to find the minimum of a function. In machine learning, it helps in finding the best parameters for a model by iteratively moving in the direction of the steepest descent of the cost function.",
+        "detailedAnswer": "Gradient descent is an iterative optimization algorithm used for finding the local minimum of a differentiable function. In the context of machine learning, it is used to minimize the cost or loss function, which measures the error between the model's predictions and the actual values. The algorithm starts with an initial set of parameter values and repeatedly updates them in the opposite direction of the gradient of the cost function until it converges to a minimum.",
         "category": "technical",
         "difficulty": "CHALLENGE",
-        "tags": [
-          "gradient descent",
-          "optimization",
-          "cost function",
-          "learning rate",
-          "algorithms"
-        ],
-        "order": 10,
-        "views": 0,
-        "helpful": 0,
-        "chapterId": null
+        "tags": ["gradient descent", "optimization", "cost function"]
       },
       {
         "question": "What is the difference between cost function and loss function?",
-        "easyAnswer": "Loss function measures error for one training example. Cost function is the average of loss functions over all training examples. Think of it as: loss = individual test score, cost = class average.",
-        "detailedAnswer": "While often used interchangeably, there is a subtle distinction: Loss Function measures the error for a single training example. It quantifies how far off the model's prediction is from the actual value for one data point. Cost Function (also called objective function) is the average of loss functions over the entire training dataset. It represents the overall error of the model across all training examples. The goal of training is to minimize the cost function, which in turn minimizes the average loss across all data points. For example, in linear regression, the loss function might be the squared error for one prediction, while the cost function would be the mean squared error across all predictions. Understanding this distinction is important for implementing and debugging machine learning algorithms correctly.",
+        "easyAnswer": "A loss function calculates the error for a single training example, while a cost function is the average of the loss functions over the entire training dataset.",
+        "detailedAnswer": "In the context of machine learning, the terms \"loss function\" and \"cost function\" are often used interchangeably, but there is a subtle difference. A **loss function** (or error function) is typically defined for a single training example and measures how well the model's prediction for that example matches the actual value. A **cost function**, on the other hand, is usually the average of the loss function over the entire training dataset. The goal of training a model is to find the parameters that minimize this cost function.",
         "category": "technical",
         "difficulty": "PRACTICE",
-        "tags": [
-          "cost function",
-          "loss function",
-          "error measurement",
-          "optimization",
-          "terminology"
-        ],
-        "order": 11,
-        "views": 0,
-        "helpful": 0,
-        "chapterId": null
+        "tags": ["cost function", "loss function", "optimization"]
       },
       {
         "question": "What is the learning rate in Gradient Descent?",
-        "easyAnswer": "The learning rate controls how big of a step the algorithm takes when updating parameters. Too large = overshoot the target, too small = very slow learning. It's like adjusting your step size when walking downhill.",
-        "detailedAnswer": "The learning rate (α) is a hyperparameter that controls how much the model parameters are adjusted during each iteration of gradient descent. It determines the size of the steps taken toward the minimum of the cost function. If the learning rate is too high: The algorithm may overshoot the minimum, causing the model to oscillate or diverge, leading to unstable learning and poor convergence. If the learning rate is too low: The algorithm takes very small steps, resulting in slow convergence. The model may take an excessively long time to train and could get stuck in local minima. Finding the optimal learning rate is crucial for efficient and effective model training. Common values range from 0.001 to 0.1, but the ideal value depends on the specific problem and dataset. Techniques like learning rate scheduling and adaptive learning rates can help optimize this hyperparameter during training.",
+        "easyAnswer": "The learning rate is a small number that controls how big of a step the gradient descent algorithm takes during each iteration while moving towards the minimum of the cost function.",
+        "detailedAnswer": "The learning rate, often denoted by alpha (α), is a hyperparameter in the gradient descent algorithm that determines the step size at each iteration while moving toward a minimum of a loss function. It is a crucial parameter to tune. If the learning rate is too small, the training process will be very slow. If it is too large, the algorithm may overshoot the minimum and fail to converge, or even diverge.",
         "category": "technical",
         "difficulty": "CHALLENGE",
-        "tags": [
-          "learning rate",
-          "hyperparameter",
-          "optimization",
-          "convergence",
-          "gradient descent"
-        ],
-        "order": 12,
-        "views": 0,
-        "helpful": 0,
-        "chapterId": null
+        "tags": ["learning rate", "gradient descent", "hyperparameter"]
       },
       {
         "question": "What is the difference between Linear Regression and Polynomial Regression?",
-        "easyAnswer": "Linear Regression fits a straight line to data. Polynomial Regression fits a curved line (polynomial) to capture non-linear patterns. It's like the difference between using a ruler versus a flexible curve to draw through points.",
-        "detailedAnswer": "Linear Regression assumes a linear relationship between input features and the target variable. The model fits a straight line (or hyperplane) to the data. Polynomial Regression extends linear regression by modeling the relationship as an nth-degree polynomial. It can capture non-linear patterns in the data by including polynomial terms of the input features (e.g., x², x³). While polynomial regression can fit more complex patterns, it's more prone to overfitting, especially with high-degree polynomials. Linear regression is simpler, more interpretable, and often preferred when the relationship is approximately linear. The choice between linear and polynomial regression depends on the underlying relationship in the data and the trade-off between model complexity and interpretability. Polynomial regression is useful when the relationship between variables is clearly non-linear but still follows a predictable pattern.",
+        "easyAnswer": "Linear Regression fits a straight line to the data, while Polynomial Regression fits a curved line, allowing it to model more complex relationships between variables.",
+        "detailedAnswer": "The key difference between Linear Regression and Polynomial Regression lies in the relationship they assume between the independent and dependent variables. Linear Regression models a linear relationship, meaning it fits a straight line to the data. Polynomial Regression, on the other hand, can model non-linear relationships by fitting a polynomial equation to the data, resulting in a curved line. While the relationship between the features and the target is non-linear in polynomial regression, it is still considered a type of linear model because the regression function is linear in terms of the unknown parameters.",
         "category": "technical",
         "difficulty": "PRACTICE",
-        "tags": [
-          "linear regression",
-          "polynomial regression",
-          "non-linear",
-          "model complexity",
-          "overfitting"
-        ],
-        "order": 13,
-        "views": 0,
-        "helpful": 0,
-        "chapterId": null
+        "tags": ["linear regression", "polynomial regression", "non-linear"]
+      },
+      {
+        "question": "What is the difference between correlation and regression?",
+        "easyAnswer": "Correlation measures the strength and direction of the relationship between two variables, while regression describes the nature of that relationship and allows for prediction.",
+        "detailedAnswer": "Correlation and regression are related but distinct statistical concepts. **Correlation** is a statistical measure that expresses the extent to which two variables are linearly related, meaning they change together at a constant rate. It is a single value that indicates the strength and direction of the relationship. **Regression**, on the other hand, is a method used to model the relationship between a dependent variable and one or more independent variables. It allows us to understand how the dependent variable changes as the independent variables change and can be used for prediction.",
+        "category": "technical",
+        "difficulty": "PRACTICE",
+        "tags": ["correlation", "regression", "statistics"]
       },
       {
         "question": "What is multicollinearity in regression?",
-        "easyAnswer": "Multicollinearity occurs when two or more input variables are highly correlated. This makes it hard to determine the individual effect of each variable, like trying to figure out which twin is taller when they're always standing together.",
-        "detailedAnswer": "Multicollinearity occurs when two or more independent variables in a regression model are highly correlated with each other. This creates problems because it becomes difficult to determine the individual effect of each predictor on the target variable. Coefficient estimates become unstable and sensitive to small changes in the data. Standard errors of coefficients increase, reducing statistical significance. Model interpretation becomes challenging. Detection methods include calculating Variance Inflation Factor (VIF) or examining correlation matrices. Solutions include removing highly correlated features, using dimensionality reduction techniques like PCA, or employing regularization methods such as Ridge or Lasso regression. Multicollinearity doesn't affect the model's predictive power but makes it difficult to understand the individual contribution of each predictor variable.",
+        "easyAnswer": "Multicollinearity is when two or more predictor variables in a regression model are highly correlated with each other, which can make it difficult to determine the individual effect of each variable on the outcome.",
+        "detailedAnswer": "Multicollinearity occurs in a regression model when two or more independent variables are highly correlated, meaning that one can be linearly predicted from the others with a substantial degree of accuracy. This can lead to problems such as unstable and unreliable estimates of the regression coefficients, making it difficult to assess the effect of individual independent variables on the dependent variable.",
         "category": "technical",
         "difficulty": "CHALLENGE",
-        "tags": [
-          "multicollinearity",
-          "regression",
-          "correlation",
-          "VIF",
-          "model interpretation"
-        ],
-        "order": 14,
-        "views": 0,
-        "helpful": 0,
-        "chapterId": null
+        "tags": ["multicollinearity", "regression", "correlation"]
+      },
+      {
+        "question": "What is the difference between Batch Gradient Descent and Stochastic Gradient Descent?",
+        "easyAnswer": "Batch Gradient Descent calculates the error for all training examples before updating the model's parameters, while Stochastic Gradient Descent updates the parameters after each single training example.",
+        "detailedAnswer": "The main difference between Batch Gradient Descent and Stochastic Gradient Descent (SGD) lies in how much data is used to compute the gradient of the cost function at each iteration. **Batch Gradient Descent** uses the entire training dataset to compute the gradient and update the model's parameters. This can be computationally expensive for large datasets. **Stochastic Gradient Descent** updates the parameters for each training example one by one. This is much faster but the path to the minimum can be noisy and fluctuate.",
+        "category": "technical",
+        "difficulty": "CHALLENGE",
+        "tags": ["batch gradient descent", "stochastic gradient descent", "optimization"]
       }
     ]
   },
@@ -264,130 +141,68 @@
     "chapterTitle": "Classification & Logistic Regression",
     "faqs": [
       {
-        "question": "What is the difference between Batch Gradient Descent and Stochastic Gradient Descent?",
-        "easyAnswer": "Batch GD uses ALL data for each update (accurate but slow). SGD uses ONE example at a time (fast but noisy). Mini-batch GD uses a small batch (good compromise). It's like studying for an exam: reviewing all notes at once vs. one flashcard at a time vs. small groups of cards.",
-        "detailedAnswer": "Batch Gradient Descent computes the gradient using the entire training dataset before updating parameters. It provides accurate gradient estimates but is computationally expensive for large datasets and can be slow to converge. Stochastic Gradient Descent (SGD) updates parameters after computing the gradient for each individual training example. It's faster and can escape local minima due to its noisy updates, but the path to convergence is more erratic. Mini-Batch Gradient Descent is a compromise, using a small batch of examples (typically 32-256) to compute the gradient. It balances the stability of batch gradient descent with the speed of SGD and is the most commonly used approach in practice. The choice between these methods depends on the dataset size, computational resources, and the specific requirements of the problem.",
-        "category": "technical",
-        "difficulty": "CHALLENGE",
-        "tags": [
-          "batch gradient descent",
-          "stochastic gradient descent",
-          "mini-batch",
-          "optimization",
-          "algorithms"
-        ],
-        "order": 15,
-        "views": 0,
-        "helpful": 0,
-        "chapterId": null
-      },
-      {
         "question": "What is Classification in Machine Learning?",
-        "easyAnswer": "Classification is predicting categories or labels for data. Like deciding if an email is spam or not spam, or if a picture contains a cat, dog, or bird. It's about putting things into predefined boxes.",
-        "detailedAnswer": "Classification is a supervised learning task where the goal is to predict discrete categories or class labels for given input data. The model learns to assign observations to predefined categories based on their features. Classification tasks include: Binary Classification - Two mutually exclusive classes (e.g., spam/not spam, disease present/absent). Multi-Class Classification - More than two classes (e.g., classifying images as cat, dog, or bird). Multi-Label Classification - Each instance can belong to multiple classes simultaneously. Common classification algorithms include Logistic Regression, Decision Trees, Random Forest, Support Vector Machines, K-Nearest Neighbors, and Naive Bayes. Classification is widely used in applications like spam detection, medical diagnosis, sentiment analysis, and image recognition.",
+        "easyAnswer": "Classification is a machine learning task where the goal is to predict a discrete category or class for a given input. For example, classifying an email as \"spam\" or \"not spam.\"",
+        "detailedAnswer": "Classification is a supervised learning technique in machine learning where the algorithm learns from a labeled dataset to assign a class label to new, unseen data points. The output of a classification model is a discrete categorical value. The model learns a decision boundary that separates the different classes based on the input features. Common classification algorithms include Logistic Regression, Support Vector Machines, and Decision Trees.",
         "category": "general",
         "difficulty": "PRACTICE",
-        "tags": [
-          "classification",
-          "supervised learning",
-          "prediction",
-          "categories",
-          "algorithms"
-        ],
-        "order": 16,
-        "views": 0,
-        "helpful": 0,
-        "chapterId": null
+        "tags": ["classification", "supervised learning", "prediction"]
       },
       {
         "question": "What is Logistic Regression?",
-        "easyAnswer": "Despite its name, Logistic Regression is used for classification, not regression. It predicts the probability of something belonging to a certain class (like 80% chance of being spam). It uses the sigmoid function to output values between 0 and 1.",
-        "detailedAnswer": "Despite its name, Logistic Regression is a classification algorithm, not a regression algorithm. It predicts the probability that an instance belongs to a particular class. The algorithm uses the logistic (sigmoid) function to map predicted values to probabilities between 0 and 1. For binary classification, logistic regression models the probability as: P(y=1|x) = 1/(1 + e^(-(β₀ + β₁x)), where x represents the input features and β represents the model parameters. The model learns the optimal coefficients by maximizing the likelihood that the observed data came from the model. Logistic regression is widely used for binary classification problems like spam detection, medical diagnosis, and credit scoring. It's valued for its interpretability, computational efficiency, and the fact that it provides probability estimates rather than just class labels.",
+        "easyAnswer": "Logistic Regression is a classification algorithm used to predict a binary outcome (e.g., yes/no, 1/0) by fitting the data to a logistic or sigmoid function.",
+        "detailedAnswer": "Despite its name, Logistic Regression is a supervised learning algorithm used for classification tasks, not regression. It is primarily used for binary classification problems where the outcome has two possible classes. The model calculates the probability that a given input belongs to a particular class by using the logistic (or sigmoid) function to map the output of a linear equation to a value between 0 and 1.",
         "category": "technical",
         "difficulty": "PRACTICE",
-        "tags": [
-          "logistic regression",
-          "classification",
-          "sigmoid function",
-          "probability",
-          "binary classification"
-        ],
-        "order": 17,
-        "views": 0,
-        "helpful": 0,
-        "chapterId": null
+        "tags": ["logistic regression", "classification", "sigmoid function"]
       },
       {
         "question": "What is the Sigmoid function?",
-        "easyAnswer": "The Sigmoid function is an S-shaped curve that converts any number to a value between 0 and 1. It's perfect for converting model outputs to probabilities. Large positive numbers → close to 1, large negative numbers → close to 0.",
-        "detailedAnswer": "The Sigmoid function (also called logistic function) is an activation function that maps any real-valued number to a value between 0 and 1. Its mathematical form is: σ(x) = 1/(1 + e^(-x)). Key properties include: Output range: (0, 1), S-shaped curve, Smooth and differentiable, Asymptotes at 0 and 1. In logistic regression, the sigmoid function converts the linear combination of features into a probability. Values closer to 1 indicate high probability of the positive class, while values closer to 0 indicate low probability. The sigmoid function is also used as an activation function in neural networks, particularly in the output layer for binary classification problems. Its smooth, differentiable nature makes it suitable for gradient-based optimization algorithms.",
+        "easyAnswer": "The Sigmoid function is a mathematical function that takes any real-valued number and maps it to a value between 0 and 1, which is useful for converting outputs into probabilities in classification.",
+        "detailedAnswer": "The Sigmoid function, also known as the logistic function, is a mathematical function having a characteristic \"S\"-shaped curve. It takes a real-valued number as input and squashes it to a range between 0 and 1. In machine learning, especially in logistic regression and neural networks, it is used as an activation function to convert a linear output into a probability, making it suitable for binary classification tasks.",
         "category": "technical",
         "difficulty": "PRACTICE",
-        "tags": [
-          "sigmoid function",
-          "activation function",
-          "logistic function",
-          "probability",
-          "mathematics"
-        ],
-        "order": 18,
-        "views": 0,
-        "helpful": 0,
-        "chapterId": null
+        "tags": ["sigmoid function", "activation function", "logistic regression"]
       },
       {
         "question": "What is a Confusion Matrix?",
-        "easyAnswer": "A Confusion Matrix is a table that shows how well a classification model is performing. It compares predicted values with actual values, showing true positives, true negatives, false positives, and false negatives.",
-        "detailedAnswer": "A Confusion Matrix is a table used to evaluate the performance of a classification model by comparing predicted classes with actual classes. For binary classification, it's a 2×2 matrix with four components: True Positives (TP) - Correctly predicted positive instances, True Negatives (TN) - Correctly predicted negative instances, False Positives (FP) - Incorrectly predicted as positive (Type I error), False Negatives (FN) - Incorrectly predicted as negative (Type II error). The confusion matrix provides the foundation for calculating various performance metrics like accuracy, precision, recall, and F1 score. It's particularly useful for understanding what types of errors the model is making and for evaluating model performance on imbalanced datasets where accuracy alone can be misleading.",
+        "easyAnswer": "A Confusion Matrix is a table that is used to evaluate the performance of a classification model by showing the number of correct and incorrect predictions for each class.",
+        "detailedAnswer": "A confusion matrix is a performance evaluation tool in machine learning for classification problems. It is a square matrix where the rows represent the actual classes and the columns represent the predicted classes. The elements of the matrix show the number of true positives (correctly predicted positive), true negatives (correctly predicted negative), false positives (incorrectly predicted positive), and false negatives (incorrectly predicted negative). This provides a detailed breakdown of a model's performance beyond simple accuracy.",
         "category": "technical",
         "difficulty": "PRACTICE",
-        "tags": [
-          "confusion matrix",
-          "evaluation metrics",
-          "true positives",
-          "false positives",
-          "model assessment"
-        ],
-        "order": 19,
-        "views": 0,
-        "helpful": 0,
-        "chapterId": null
+        "tags": ["confusion matrix", "evaluation metrics", "classification"]
+      },
+      {
+        "question": "What is the difference between Linear Regression and Logistic Regression?",
+        "easyAnswer": "Linear Regression is used for predicting continuous values (like price), while Logistic Regression is used for predicting categorical outcomes (like yes/no).",
+        "detailedAnswer": "The primary difference between Linear Regression and Logistic Regression is the type of output they predict. Linear Regression is a regression algorithm that predicts a continuous output variable. It fits a straight line to the data. Logistic Regression, on the other hand, is a classification algorithm that predicts a discrete, categorical output. It uses the logistic (sigmoid) function to return the probability of a class.",
+        "category": "technical",
+        "difficulty": "PRACTICE",
+        "tags": ["linear regression", "logistic regression", "classification", "regression"]
       },
       {
         "question": "What is Precision and Recall?",
-        "easyAnswer": "Precision: Of all the positive predictions, how many were actually correct? (Avoid false positives). Recall: Of all the actual positives, how many did we find? (Avoid false negatives). There's usually a trade-off between them.",
-        "detailedAnswer": "Precision measures how many of the predicted positive instances were actually positive. It answers: 'Out of all the positive predictions we made, how many were correct?' Formula: Precision = TP/(TP + FP). High precision means low false positive rate—when the model predicts positive, it's usually correct. Recall (also called Sensitivity or True Positive Rate) measures how many of the actual positive instances were correctly identified. It answers: 'Out of all the actual positive cases, how many did we correctly predict?' Formula: Recall = TP/(TP + FN). High recall means low false negative rate—the model catches most of the positive cases. There's typically a trade-off between precision and recall. Increasing one often decreases the other. The choice between optimizing for precision or recall depends on the specific application and the relative costs of false positives versus false negatives.",
+        "easyAnswer": "Precision measures how many of the predicted positive cases were actually correct, while Recall measures how many of the actual positive cases the model was able to correctly identify.",
+        "detailedAnswer": "Precision and Recall are two important metrics for evaluating the performance of a classification model, especially in cases of imbalanced datasets.\n* **Precision** answers the question: \"Of all the instances that the model predicted to be positive, how many were actually positive?\" It is the ratio of true positives to the total number of predicted positives (true positives + false positives).\n* **Recall** (or Sensitivity) answers the question: \"Of all the actual positive instances, how many did the model correctly identify?\" It is the ratio of true positives to the total number of actual positives (true positives + false negatives).",
         "category": "technical",
         "difficulty": "CHALLENGE",
-        "tags": [
-          "precision",
-          "recall",
-          "evaluation metrics",
-          "classification",
-          "trade-off"
-        ],
-        "order": 20,
-        "views": 0,
-        "helpful": 0,
-        "chapterId": null
+        "tags": ["precision", "recall", "evaluation metrics", "classification"]
       },
       {
         "question": "What is the ROC curve and AUC?",
-        "easyAnswer": "ROC curve plots true positive rate vs false positive rate at different thresholds. AUC is the area under this curve (0.5 to 1.0). Higher AUC = better model. It's a comprehensive way to evaluate classification performance across all thresholds.",
-        "detailedAnswer": "ROC (Receiver Operating Characteristic) Curve is a graphical plot that illustrates the diagnostic ability of a binary classifier as its discrimination threshold varies. It plots the True Positive Rate (Recall) against the False Positive Rate at various threshold settings. AUC (Area Under the Curve) represents the area under the ROC curve, providing a single scalar value to measure model performance. AUC ranges from 0 to 1: AUC = 1.0: Perfect classifier, AUC = 0.5: Random classifier (no discriminative power), AUC < 0.5: Worse than random guessing. A higher AUC indicates better model performance in distinguishing between positive and negative classes across all possible thresholds. The ROC curve and AUC are particularly useful for comparing different models and for evaluating performance when the class distribution is imbalanced.",
+        "easyAnswer": "The ROC curve is a graph that shows the performance of a classification model at all classification thresholds. The AUC (Area Under the Curve) is a single number that summarizes the model's performance across all thresholds, with a higher AUC indicating a better model.",
+        "detailedAnswer": "The **Receiver Operating Characteristic (ROC) curve** is a graphical plot that illustrates the diagnostic ability of a binary classifier system as its discrimination threshold is varied. The curve is created by plotting the True Positive Rate (Recall) against the False Positive Rate at various threshold settings. The **Area Under the Curve (AUC)** represents the degree or measure of separability. It tells how much the model is capable of distinguishing between classes. A higher AUC value (closer to 1) indicates a better-performing model.",
         "category": "technical",
         "difficulty": "CHALLENGE",
-        "tags": [
-          "ROC curve",
-          "AUC",
-          "evaluation metrics",
-          "classification",
-          "threshold"
-        ],
-        "order": 21,
-        "views": 0,
-        "helpful": 0,
-        "chapterId": null
+        "tags": ["ROC curve", "AUC", "evaluation metrics", "classification"]
+      },
+      {
+        "question": "What is the difference between One-vs-Rest and One-vs-One classification?",
+        "easyAnswer": "In multi-class classification, One-vs-Rest trains one classifier for each class against all other classes. One-vs-One trains a separate classifier for every pair of classes.",
+        "detailedAnswer": "One-vs-Rest (OvR) and One-vs-One (OvO) are two common strategies for using binary classification algorithms for multi-class classification problems.\n* **One-vs-Rest (OvR):** In this strategy, for a problem with N classes, N separate binary classifiers are trained. Each classifier is trained to distinguish one class from the rest of the classes.\n* **One-vs-One (OvO):** This strategy involves training a binary classifier for every pair of classes. For N classes, this results in N * (N-1) / 2 classifiers. For a new data point, each classifier makes a prediction, and the class that receives the most \"votes\" is the final prediction.",
+        "category": "technical",
+        "difficulty": "CHALLENGE",
+        "tags": ["one-vs-rest", "one-vs-one", "multi-class classification"]
       }
     ]
   },
@@ -395,130 +210,60 @@
     "chapterTitle": "Neural Networks Fundamentals",
     "faqs": [
       {
-        "question": "What is the difference between One-vs-Rest and One-vs-One classification?",
-        "easyAnswer": "One-vs-Rest: Create N classifiers, each distinguishing one class from all others. One-vs-One: Create N×(N-1)/2 classifiers, each distinguishing between pairs of classes. OvR is simpler, OvO can be better for some algorithms like SVM.",
-        "detailedAnswer": "These are strategies for extending binary classification algorithms to multi-class problems: One-vs-Rest (OvR) (also called One-vs-All) creates N binary classifiers for N classes. Each classifier distinguishes one class from all other classes combined. The final prediction is the class with the highest confidence score. It's computationally efficient for large numbers of classes. One-vs-One (OvO) creates N×(N-1)/2 binary classifiers for N classes. Each classifier distinguishes between every pair of classes. The final prediction is determined by majority voting. It works better for kernel-based algorithms like SVM but requires more classifiers. The choice between OvR and OvO depends on the specific algorithm, dataset size, and computational constraints. OvR is generally preferred for its simplicity and efficiency, while OvO may provide better performance for certain types of algorithms.",
-        "category": "technical",
-        "difficulty": "CHALLENGE",
-        "tags": [
-          "one-vs-rest",
-          "one-vs-one",
-          "multi-class classification",
-          "strategies",
-          "algorithms"
-        ],
-        "order": 22,
-        "views": 0,
-        "helpful": 0,
-        "chapterId": null
-      },
-      {
         "question": "What is a Neural Network?",
-        "easyAnswer": "A Neural Network is a computing system inspired by the human brain. It consists of interconnected nodes (neurons) organized in layers that process information. It learns by adjusting connections between neurons based on training data.",
-        "detailedAnswer": "A Neural Network is a computational model inspired by the structure and function of biological neural networks in the human brain. It consists of interconnected nodes (neurons) organized in layers that process and transform input data to produce outputs. Basic structure includes: Input Layer - Receives the raw data, Hidden Layers - Perform transformations and feature extraction, Output Layer - Produces the final prediction or classification. Neural networks learn by adjusting the weights of connections between neurons through a training process called backpropagation, minimizing the difference between predicted and actual outputs. They are particularly effective for capturing complex, non-linear relationships in data and form the foundation of deep learning. Neural networks have revolutionized fields from computer vision to natural language processing.",
+        "easyAnswer": "A Neural Network is a machine learning model inspired by the human brain, consisting of interconnected nodes (neurons) that process information in layers to recognize patterns and make decisions.",
+        "detailedAnswer": "An artificial neural network is a computational model that is inspired by the way biological neural networks in the human brain work. It consists of a large number of interconnected processing units called neurons, which are organized into layers. These networks can learn from data to perform tasks such as classification, regression, and pattern recognition by adjusting the strengths (weights) of the connections between neurons.",
         "category": "general",
         "difficulty": "PRACTICE",
-        "tags": [
-          "neural networks",
-          "deep learning",
-          "neurons",
-          "layers",
-          "brain-inspired"
-        ],
-        "order": 23,
-        "views": 0,
-        "helpful": 0,
-        "chapterId": null
+        "tags": ["neural networks", "deep learning", "AI"]
       },
       {
         "question": "What is a Perceptron?",
-        "easyAnswer": "A Perceptron is the simplest neural network - just one neuron. It takes inputs, applies weights, sums them up, applies an activation function, and produces an output. It's the building block of more complex neural networks.",
-        "detailedAnswer": "A Perceptron is the simplest form of a neural network, consisting of a single neuron that makes decisions by weighing input features. It was one of the first neural network models, introduced in the 1950s. The perceptron takes multiple inputs, applies weights to each input, sums the weighted inputs, applies an activation function (typically a step function), and produces a binary output (0 or 1). While simple, the perceptron can only solve linearly separable problems. Multiple perceptrons combined in layers can solve more complex, non-linear problems. The perceptron learning algorithm adjusts the weights based on classification errors, making it a foundational concept in machine learning. Understanding the perceptron is essential for grasping how more complex neural networks work at a fundamental level.",
+        "easyAnswer": "A Perceptron is the simplest form of a neural network, consisting of a single neuron that takes multiple inputs, applies weights, and produces a binary output. It is a building block for more complex neural networks.",
+        "detailedAnswer": "The Perceptron is an algorithm for supervised learning of binary classifiers. It is a single-layer neural network and a linear classifier. The perceptron takes a vector of real-valued inputs, calculates a linear combination of these inputs, and if the result is above a certain threshold, it outputs 1; otherwise, it outputs 0. It's a fundamental concept that laid the groundwork for more complex neural networks.",
         "category": "technical",
         "difficulty": "PRACTICE",
-        "tags": [
-          "perceptron",
-          "neuron",
-          "single layer",
-          "linear separability",
-          "history"
-        ],
-        "order": 24,
-        "views": 0,
-        "helpful": 0,
-        "chapterId": null
+        "tags": ["perceptron", "neural networks", "history"]
       },
       {
         "question": "What is an Activation Function?",
-        "easyAnswer": "An activation function decides whether a neuron should be activated or not. It introduces non-linearity, allowing neural networks to learn complex patterns. Without it, a neural network would just be a simple linear model.",
-        "detailedAnswer": "An Activation Function is a mathematical function applied to a neuron's output that introduces non-linearity into the network, enabling it to learn complex patterns. Without activation functions, a neural network would simply be a linear regression model, regardless of its depth. Common activation functions include: Sigmoid - outputs between 0 and 1, used in output layers for binary classification, ReLU (Rectified Linear Unit) - f(x) = max(0, x), most popular for hidden layers, helps avoid vanishing gradients, Tanh - outputs between -1 and 1, zero-centered, often used in hidden layers, Softmax - used in output layer for multi-class classification, converts logits to probabilities. The choice of activation function affects the network's ability to learn, convergence speed, and overall performance. ReLU and its variants are most commonly used in hidden layers due to their computational efficiency and effectiveness in addressing the vanishing gradient problem.",
+        "easyAnswer": "An activation function in a neural network decides whether a neuron should be activated or not by calculating a weighted sum of its inputs and adding a bias. It introduces non-linearity into the network, allowing it to learn more complex patterns.",
+        "detailedAnswer": "An activation function is a crucial component of a neuron in an artificial neural network. It determines the output of that neuron given a set of inputs. After the neuron computes the weighted sum of its inputs and adds a bias, the activation function is applied to this result. The primary role of the activation function is to introduce non-linearity into the output of a neuron. This non-linearity is essential for the neural network to learn and represent complex patterns and relationships in the data.",
         "category": "technical",
         "difficulty": "CHALLENGE",
-        "tags": [
-          "activation function",
-          "non-linearity",
-          "ReLU",
-          "sigmoid",
-          "neural networks"
-        ],
-        "order": 25,
-        "views": 0,
-        "helpful": 0,
-        "chapterId": null
+        "tags": ["activation function", "neural networks", "non-linearity"]
       },
       {
         "question": "What is Backpropagation?",
-        "easyAnswer": "Backpropagation is the algorithm used to train neural networks. It works by calculating the error at the output, then propagating this error backward through the network to adjust the weights and improve future predictions.",
-        "detailedAnswer": "Backpropagation is the algorithm used to train neural networks by computing gradients of the loss function with respect to each weight in the network. It works by: Forward Pass - Input data flows through the network, and predictions are made, Calculate Loss - Compare predictions with actual labels using a loss function, Backward Pass - Propagate the error backward through the network using the chain rule of calculus, Update Weights - Adjust weights in the direction that reduces the loss using gradient descent. Backpropagation efficiently computes gradients for all weights simultaneously by reusing computations, making it practical to train deep networks with millions of parameters. The discovery of backpropagation in the 1980s was a major breakthrough that made training deep neural networks feasible and sparked the modern deep learning revolution.",
+        "easyAnswer": "Backpropagation is the primary algorithm for training neural networks. It calculates the error in the network's output and then propagates this error backward through the network layers to update the weights and improve the model's accuracy.",
+        "detailedAnswer": "Backpropagation, short for \"backward propagation of errors,\" is an algorithm for supervised learning of artificial neural networks using gradient descent. It works by calculating the gradient of the loss function with respect to each weight in the network by the chain rule. This gradient is then used to update the weights to minimize the loss. The process involves a forward pass, where the input data is fed through the network to get an output and calculate the error, and a backward pass, where the error is propagated back through the network to update the weights.",
         "category": "technical",
         "difficulty": "CHALLENGE",
-        "tags": [
-          "backpropagation",
-          "training",
-          "gradient descent",
-          "chain rule",
-          "neural networks"
-        ],
-        "order": 26,
-        "views": 0,
-        "helpful": 0,
-        "chapterId": null
+        "tags": ["backpropagation", "neural networks", "training", "gradient descent"]
       },
       {
         "question": "What is the difference between Feedforward and Recurrent Neural Networks?",
-        "easyAnswer": "Feedforward networks: information flows one way (input → output). Recurrent networks: have loops allowing information to persist, creating memory. Feedforward for static data, RNNs for sequential data like text or time series.",
-        "detailedAnswer": "Feedforward Neural Networks have information flowing in one direction: from input to output. There are no loops or cycles in the network architecture. Each layer processes information independently. They're suitable for fixed-size inputs where temporal dependencies don't matter. Examples include Multilayer Perceptrons and Convolutional Neural Networks. Recurrent Neural Networks (RNNs) contain loops allowing information to persist. They maintain an internal state (memory) from previous inputs. They process sequential data by feeding output back as input. They're suitable for time-series data, natural language, and sequential patterns. Examples include LSTM networks, GRU networks. The key difference is that RNNs can handle variable-length sequences and capture temporal dependencies, while feedforward networks are better for static, independent data points.",
+        "easyAnswer": "In a Feedforward Neural Network, information flows in only one direction, from input to output. In a Recurrent Neural Network (RNN), information can flow in cycles, allowing it to have a \"memory\" of past inputs, which is useful for sequential data.",
+        "detailedAnswer": "The main difference between Feedforward Neural Networks (FNNs) and Recurrent Neural Networks (RNNs) lies in their architecture and how they process data.\n* **Feedforward Neural Networks:** These are the simplest type of artificial neural network. Information moves in only one direction—from the input layer, through the hidden layers, to the output layer. There are no cycles or loops in the network.\n* **Recurrent Neural Networks (RNNs):** In RNNs, the connections between neurons form a directed cycle. This allows the network to exhibit temporal dynamic behavior and have a \"memory\" of previous inputs. This makes them well-suited for tasks involving sequential data, such as time series analysis or natural language processing.",
         "category": "technical",
         "difficulty": "PRACTICE",
-        "tags": [
-          "feedforward networks",
-          "recurrent networks",
-          "RNN",
-          "sequential data",
-          "architecture"
-        ],
-        "order": 27,
-        "views": 0,
-        "helpful": 0,
-        "chapterId": null
+        "tags": ["feedforward networks", "recurrent networks", "RNN", "architecture"]
       },
       {
         "question": "What are the vanishing and exploding gradient problems?",
-        "easyAnswer": "Vanishing gradients: gradients become extremely small during training, so early layers learn very slowly. Exploding gradients: gradients become extremely large, causing unstable updates. Both make training deep networks difficult.",
-        "detailedAnswer": "These are critical challenges in training deep neural networks: Vanishing Gradients occur when gradients become extremely small as they propagate backward through many layers. This happens particularly with activation functions like sigmoid and tanh. The result is that early layers learn very slowly or not at all, making it difficult to train deep networks. Exploding Gradients occur when gradients become extremely large during backpropagation, causing unstable updates and numerical overflow. This can lead to NaN (Not a Number) values in the network weights. Solutions include using ReLU activation functions (reduces vanishing gradients), gradient clipping (prevents exploding gradients), batch normalization, skip connections (as in ResNet), LSTM and GRU architectures for RNNs. These problems were major obstacles to training deep networks and their solutions enabled the recent advances in deep learning.",
+        "easyAnswer": "In deep neural networks, the vanishing gradient problem is when gradients become extremely small as they are propagated backward, making it hard for the network to learn. The exploding gradient problem is the opposite, where gradients become extremely large, leading to unstable training.",
+        "detailedAnswer": "The vanishing and exploding gradient problems are challenges that can occur during the training of deep neural networks, particularly Recurrent Neural Networks.\n* **Vanishing Gradient Problem:** This occurs when the gradients of the loss function with respect to the weights in the earlier layers of the network become very small. As a result, the weights of these layers are not updated effectively, and the network fails to learn.\n* **Exploding Gradient Problem:** This is the opposite scenario, where the gradients become very large, leading to large updates to the weights and making the training process unstable. This can cause the model's weights to become so large that they result in NaN (Not a Number) values.",
         "category": "technical",
         "difficulty": "CHALLENGE",
-        "tags": [
-          "vanishing gradients",
-          "exploding gradients",
-          "deep learning",
-          "training problems",
-          "solutions"
-        ],
-        "order": 28,
-        "views": 0,
-        "helpful": 0,
-        "chapterId": null
+        "tags": ["vanishing gradients", "exploding gradients", "deep learning", "training"]
+      },
+      {
+        "question": "What is the Universal Approximation Theorem?",
+        "easyAnswer": "The Universal Approximation Theorem states that a neural network with just one hidden layer can, in theory, approximate any continuous function to any desired degree of accuracy, given enough neurons in that hidden layer.",
+        "detailedAnswer": "The Universal Approximation Theorem is a significant result in the theory of artificial neural networks. It states that a feedforward network with a single hidden layer containing a finite number of neurons can approximate any continuous function on compact subsets of Rn, under mild assumptions on the activation function. This theorem provides the theoretical foundation for why neural networks are such powerful function approximators and can be used for a wide range of tasks.",
+        "category": "advanced",
+        "difficulty": "CAPSTONE",
+        "tags": ["universal approximation theorem", "theory", "neural networks"]
       }
     ]
   },
@@ -526,130 +271,60 @@
     "chapterTitle": "Convolutional Neural Networks",
     "faqs": [
       {
-        "question": "What is the Universal Approximation Theorem?",
-        "easyAnswer": "The Universal Approximation Theorem states that a neural network with just one hidden layer can approximate any continuous function, given enough neurons. It provides theoretical justification for why neural networks work, but doesn't guarantee efficient learning.",
-        "detailedAnswer": "The Universal Approximation Theorem states that a feedforward neural network with a single hidden layer containing a finite number of neurons can approximate any continuous function on compact subsets of ℝ^n, under mild assumptions on the activation function. This theorem provides theoretical justification for using neural networks but comes with important caveats: It guarantees existence but not efficiency (may require exponentially many neurons), doesn't specify how to find the optimal parameters, doesn't guarantee good generalization to new data, deeper networks often learn representations more efficiently than wide shallow networks. The theorem is important because it tells us that neural networks are theoretically capable of representing any function, but in practice, architecture design, training algorithms, and regularization techniques are crucial for actually learning good representations efficiently.",
-        "category": "advanced",
-        "difficulty": "CAPSTONE",
-        "tags": [
-          "universal approximation theorem",
-          "theory",
-          "neural networks",
-          "function approximation",
-          "mathematical foundations"
-        ],
-        "order": 29,
-        "views": 0,
-        "helpful": 0,
-        "chapterId": null
-      },
-      {
         "question": "What is a Convolutional Neural Network (CNN)?",
-        "easyAnswer": "A CNN is a specialized neural network for processing grid-like data, especially images. It uses convolution operations to detect features like edges and textures, and is the foundation of modern computer vision.",
-        "detailedAnswer": "A Convolutional Neural Network is a specialized type of neural network designed primarily for processing grid-like data such as images. CNNs use convolutional layers that apply filters to detect patterns like edges, textures, and more complex features in higher layers. Key characteristics include uses convolutional operations instead of general matrix multiplication, employs parameter sharing across spatial dimensions, maintains spatial relationships in the data, and typically includes convolutional layers, pooling layers, and fully connected layers. CNNs have revolutionized computer vision tasks including image classification, object detection, facial recognition, and medical image analysis. Their ability to automatically learn hierarchical feature representations from raw pixel data makes them extremely powerful for visual understanding tasks.",
-        "category": "technical",
+        "easyAnswer": "A Convolutional Neural Network (CNN) is a type of deep learning neural network designed specifically for processing and analyzing visual data, like images and videos. It uses special layers called convolutional layers to automatically and adaptively learn spatial hierarchies of features.",
+        "detailedAnswer": "A Convolutional Neural Network (CNN or ConvNet) is a class of deep neural networks, most commonly applied to analyzing visual imagery. They are inspired by the organization of the animal visual cortex. CNNs use a variation of multilayer perceptrons designed to require minimal preprocessing. They are known for their ability to automatically and adaptively learn spatial hierarchies of features from input data through the use of convolutional layers, pooling layers, and fully connected layers.",
+        "category": "deep-learning",
         "difficulty": "PRACTICE",
-        "tags": [
-          "CNN",
-          "convolutional neural networks",
-          "computer vision",
-          "image processing",
-          "deep learning"
-        ],
-        "order": 30,
-        "views": 0,
-        "helpful": 0,
-        "chapterId": null
+        "tags": ["CNN", "convolutional neural networks", "computer vision", "deep learning"]
       },
       {
         "question": "What is a convolution operation in CNNs?",
-        "easyAnswer": "Convolution applies a small filter (kernel) across an image to detect features. The filter slides over the image, multiplying and summing values to create a feature map. Different filters detect different patterns like edges or textures.",
-        "detailedAnswer": "A convolution operation applies a small matrix called a kernel or filter across the input image to extract features. The process: Position the filter over a region of the input, perform element-wise multiplication between filter and input values, sum all the products to get a single output value, slide the filter to the next position, and repeat until the entire input is covered. Different filters detect different features (edges, textures, patterns). Through training, the network learns which filter values best extract relevant features for the task. The convolution operation is the core building block of CNNs and enables them to automatically learn hierarchical feature representations from raw data, from simple edges in early layers to complex object parts in deeper layers.",
-        "category": "technical",
+        "easyAnswer": "A convolution operation is the process of sliding a small filter (or kernel) over an input image to produce a feature map. This operation helps in detecting patterns like edges, corners, and textures in the image.",
+        "detailedAnswer": "In a CNN, the convolution operation is the fundamental building block of a convolutional layer. It involves applying a filter (or kernel), which is a small matrix of weights, to an input image. The filter slides over the input data, performing an element-wise multiplication with the part of the input it is currently on, and then summing up the results into a single output pixel. This process is repeated across the entire input, creating a feature map that highlights specific features detected by the filter.",
+        "category": "deep-learning",
         "difficulty": "CHALLENGE",
-        "tags": [
-          "convolution",
-          "kernel",
-          "filter",
-          "feature extraction",
-          "CNN operations"
-        ],
-        "order": 31,
-        "views": 0,
-        "helpful": 0,
-        "chapterId": null
+        "tags": ["convolution", "kernel", "filter", "CNN"]
       },
       {
         "question": "What is Pooling in CNNs?",
-        "easyAnswer": "Pooling reduces the size of feature maps by downsampling. Max pooling takes the maximum value from each region, average pooling takes the average. It reduces computation and provides translation invariance.",
-        "detailedAnswer": "Pooling is a downsampling operation that reduces the spatial dimensions of feature maps, decreasing computational requirements and helping the model become invariant to small translations. Common types include Max Pooling - Takes the maximum value from each window in the feature map. Most commonly used, preserves the strongest features. Average Pooling - Computes the average of values in each window. Provides smoother downsampling. Benefits of pooling include reduces number of parameters and computations, provides translation invariance, helps prevent overfitting, and extracts dominant features. Pooling layers are typically placed between convolutional layers in CNN architectures and play a crucial role in building hierarchical representations while managing computational complexity.",
-        "category": "technical",
+        "easyAnswer": "Pooling is a technique used in CNNs to reduce the spatial size of the feature maps, which helps to decrease the computational complexity and control overfitting. Common types are Max Pooling and Average Pooling.",
+        "detailedAnswer": "Pooling, also known as downsampling, is a layer in a Convolutional Neural Network that is used to reduce the spatial dimensions (width and height) of the input volume for the next convolutional layer. It does not affect the depth dimension. The primary purposes of pooling are to reduce the number of parameters and computation in the network, and also to control overfitting. The most common types of pooling are Max Pooling, which takes the maximum value from the receptive field of the filter, and Average Pooling, which takes the average value.",
+        "category": "deep-learning",
         "difficulty": "PRACTICE",
-        "tags": [
-          "pooling",
-          "max pooling",
-          "average pooling",
-          "downsampling",
-          "CNN"
-        ],
-        "order": 32,
-        "views": 0,
-        "helpful": 0,
-        "chapterId": null
+        "tags": ["pooling", "max pooling", "average pooling", "CNN"]
       },
       {
         "question": "What are the differences between CNN and traditional neural networks?",
-        "easyAnswer": "CNNs use convolution with local connections and shared parameters. Traditional networks use fully connected layers with separate parameters for each connection. CNNs preserve spatial structure, traditional networks flatten input into vectors.",
-        "detailedAnswer": "Architecture: CNNs use convolutional layers with local connections, traditional networks use fully connected layers where every neuron connects to all neurons in the previous layer. Parameter Efficiency: CNNs share parameters across spatial locations (same filter applied everywhere), traditional networks have separate parameters for each connection. Spatial Structure: CNNs preserve spatial relationships in input data, traditional networks treat input as flat vectors, losing spatial information. Applications: CNNs excel at image and spatial data processing, traditional networks better suited for tabular and non-spatial data. The key innovation of CNNs is the use of convolution and pooling operations that exploit the spatial structure of images, making them much more efficient and effective for vision tasks than traditional fully connected networks.",
-        "category": "technical",
+        "easyAnswer": "The main difference is that CNNs are specifically designed for image data and use convolutional layers to learn local patterns, making them more efficient and effective for image-related tasks. Traditional neural networks treat the input as a flat vector and do not consider the spatial structure of the data.",
+        "detailedAnswer": "The key differences between Convolutional Neural Networks (CNNs) and traditional feedforward neural networks (FNNs) lie in their architecture and how they handle input data, particularly images.\n* **Input Structure:** FNNs take a flattened vector as input, which loses the spatial information of an image. CNNs, on the other hand, process the input as a 2D or 3D matrix, preserving the spatial relationships between pixels.\n* **Connectivity:** In an FNN, each neuron in a layer is connected to every neuron in the previous layer. In a CNN's convolutional layer, neurons are only connected to a small local region of the input, which helps in detecting local features.\n* **Parameter Sharing:** CNNs use the same filter (set of weights) across different locations in the input image, which significantly reduces the number of parameters and makes the model more efficient. FNNs have separate weights for each connection.",
+        "category": "deep-learning",
         "difficulty": "PRACTICE",
-        "tags": [
-          "CNN",
-          "traditional networks",
-          "architecture",
-          "parameter sharing",
-          "spatial structure"
-        ],
-        "order": 33,
-        "views": 0,
-        "helpful": 0,
-        "chapterId": null
+        "tags": ["CNN", "traditional networks", "architecture", "computer vision"]
       },
       {
         "question": "What is padding in CNNs and why is it important?",
-        "easyAnswer": "Padding adds extra pixels (usually zeros) around the border of an image before convolution. It prevents information loss at edges and allows control over output size. 'Same' padding keeps output size equal to input size.",
-        "detailedAnswer": "Padding involves adding extra pixels (usually zeros) around the border of an input image before applying convolution. Types include Valid Padding - No padding added; output size is smaller than input, Same Padding - Padding added to keep output size equal to input size. Importance of padding includes prevents information loss at image borders, allows control over output spatial dimensions, enables building deeper networks without rapidly shrinking feature maps, and ensures border pixels receive equal attention as central pixels. Padding is crucial for designing CNN architectures where maintaining spatial resolution or controlling the reduction in feature map size is important. Without padding, early layers would quickly reduce spatial dimensions, limiting network depth and potentially losing important information at image boundaries.",
-        "category": "technical",
+        "easyAnswer": "Padding is the process of adding extra pixels (usually zeros) around the border of an input image before applying a convolution. It's important because it helps to preserve the size of the feature maps and ensures that the filter can be applied to the pixels at the edges of the image.",
+        "detailedAnswer": "In Convolutional Neural Networks, padding involves adding extra pixels (typically with a value of zero) around the input image or feature map. This is done for two main reasons:\n1. **Preserving Spatial Dimensions:** Without padding, the size of the feature maps would shrink after each convolution. Padding allows the output feature map to have the same spatial dimensions as the input.\n2. **Improving Performance at the Borders:** Padding helps the convolutional filter to process the pixels at the edges of the image more effectively, as they will be at the center of a receptive field at some point. This prevents the loss of information at the borders.",
+        "category": "deep-learning",
         "difficulty": "PRACTICE",
-        "tags": [
-          "padding",
-          "CNN",
-          "convolution",
-          "border handling",
-          "spatial dimensions"
-        ],
-        "order": 34,
-        "views": 0,
-        "helpful": 0,
-        "chapterId": null
+        "tags": ["padding", "CNN", "convolution"]
       },
       {
         "question": "What is stride in CNNs?",
-        "easyAnswer": "Stride determines how many pixels the filter moves after each convolution. Stride 1 moves one pixel at a time (detailed), stride 2 skips every other pixel (downsampling). Larger stride = smaller output feature map.",
-        "detailedAnswer": "Stride determines how many pixels the filter moves after each operation during convolution or pooling. A stride of 1 means the filter moves one pixel at a time; a stride of 2 means it skips every other position. Effects of stride include larger stride = smaller output feature map, can be used as an alternative to pooling for downsampling, stride of 1 preserves maximum spatial information, higher strides reduce computational cost but may lose fine-grained details. Stride is an important hyperparameter in CNN design that affects the spatial resolution of feature maps and the overall computational efficiency of the network. Choosing appropriate stride values is crucial for balancing feature extraction detail with computational requirements and the desired level of spatial abstraction in the network.",
-        "category": "technical",
+        "easyAnswer": "Stride is the number of pixels the filter moves over the input image at a time during the convolution operation. A larger stride results in a smaller output feature map.",
+        "detailedAnswer": "In a convolutional neural network, the stride determines how the filter moves across the input image. It is the number of pixels the filter shifts over the input matrix in each step, both horizontally and vertically. For example, a stride of 1 means the filter moves one pixel at a time. A larger stride, such as 2, means the filter moves two pixels at a time, resulting in a smaller output feature map and reduced computational cost.",
+        "category": "deep-learning",
         "difficulty": "PRACTICE",
-        "tags": [
-          "stride",
-          "CNN",
-          "convolution",
-          "downsampling",
-          "spatial resolution"
-        ],
-        "order": 35,
-        "views": 0,
-        "helpful": 0,
-        "chapterId": null
+        "tags": ["stride", "CNN", "convolution"]
+      },
+      {
+        "question": "What are the famous CNN architectures and their contributions?",
+        "easyAnswer": "Some famous CNN architectures include LeNet-5 (one of the earliest), AlexNet (popularized deep CNNs), VGGNet (used smaller filters), GoogLeNet (introduced Inception modules), and ResNet (introduced residual connections to train very deep networks).",
+        "detailedAnswer": "Several pioneering CNN architectures have significantly advanced the field of computer vision:\n* **LeNet-5:** One of the earliest successful CNNs, primarily used for handwritten digit recognition.\n* **AlexNet:** A deeper and wider version of LeNet that won the ImageNet Large Scale Visual Recognition Challenge (ILSRC) in 2012, marking a major breakthrough for deep learning.\n* **VGGNet:** Showed that a stack of small (3x3) convolutional filters can achieve better performance than larger filters.\n* **GoogLeNet (Inception):** Introduced the \"Inception module,\" which allowed for more efficient computation by using different filter sizes in parallel.\n* **ResNet (Residual Network):** Introduced the concept of \"residual connections\" or \"skip connections,\" which enabled the training of much deeper neural networks (over 100 layers) by addressing the vanishing gradient problem.",
+        "category": "advanced",
+        "difficulty": "CHALLENGE",
+        "tags": ["CNN architectures", "LeNet", "AlexNet", "VGG", "ResNet", "history"]
       }
     ]
   },
@@ -657,131 +332,52 @@
     "chapterTitle": "Recurrent Neural Networks",
     "faqs": [
       {
-        "question": "What are the famous CNN architectures and their contributions?",
-        "easyAnswer": "LeNet-5 (1998): Early CNN for digit recognition. AlexNet (2012): Won ImageNet, popularized deep CNNs. VGG (2014): Showed importance of depth. GoogLeNet (2014): Efficient inception modules. ResNet (2015): Skip connections for very deep networks.",
-        "detailedAnswer": "Famous CNN architectures and their contributions: LeNet-5 (1998) - One of the earliest successful CNNs, designed for handwritten digit recognition. Established the basic CNN architecture pattern. AlexNet (2012) - Won ImageNet competition, popularized deep CNNs. Introduced ReLU activation, dropout, and GPU training. VGG (2014) - Demonstrated that network depth is crucial. Used small 3×3 filters consistently throughout the network. GoogLeNet/Inception (2014) - Introduced inception modules with parallel convolutional layers of different sizes, improving efficiency. ResNet (2015) - Introduced skip connections, enabling training of very deep networks (100+ layers) by solving vanishing gradient problem. Modern architectures like MobileNet (efficient for mobile devices) and EfficientNet (balanced performance and efficiency) continue to advance the field. Each architecture introduced key innovations that influenced subsequent designs and advanced the state-of-the-art in computer vision.",
-        "category": "advanced",
-        "difficulty": "CHALLENGE",
-        "tags": [
-          "CNN architectures",
-          "LeNet",
-          "AlexNet",
-          "VGG",
-          "ResNet",
-          "history"
-        ],
-        "order": 36,
-        "views": 0,
-        "helpful": 0,
-        "chapterId": null
-      },
-      {
         "question": "What is a Recurrent Neural Network (RNN)?",
-        "easyAnswer": "An RNN is a neural network designed for sequential data that maintains an internal memory. It processes data step by step, with the output from each step influencing the next. Great for language, time series, or any data with order.",
-        "detailedAnswer": "A Recurrent Neural Network is a type of neural network designed for sequential data where the output from previous steps is fed as input to the current step. Unlike feedforward networks, RNNs have loops that allow information to persist across time steps, creating an internal memory. RNNs are used for natural language processing (text generation, translation, sentiment analysis), speech recognition, time series prediction, and video analysis. The key feature is that RNNs maintain a hidden state that captures information about previous inputs, allowing them to model temporal dependencies and sequential patterns. This makes them particularly suitable for tasks where the order and context of data matter, such as understanding sentences or predicting stock prices based on historical data.",
-        "category": "technical",
+        "easyAnswer": "A Recurrent Neural Network (RNN) is a type of neural network designed to work with sequential data, like text or time series. It has a \"memory\" that allows it to use information from previous inputs to influence the current input and output.",
+        "detailedAnswer": "A Recurrent Neural Network (RNN) is a class of artificial neural networks where connections between nodes form a directed graph along a temporal sequence. This allows it to exhibit temporal dynamic behavior. Unlike feedforward neural networks, RNNs can use their internal state (memory) to process sequences of inputs. This makes them applicable to tasks such as unsegmented, connected handwriting recognition or speech recognition.",
+        "category": "deep-learning",
         "difficulty": "PRACTICE",
-        "tags": [
-          "RNN",
-          "recurrent neural networks",
-          "sequential data",
-          "memory",
-          "time series"
-        ],
-        "order": 37,
-        "views": 0,
-        "helpful": 0,
-        "chapterId": null
+        "tags": ["RNN", "recurrent neural networks", "sequential data", "NLP"]
       },
       {
         "question": "What is Backpropagation Through Time (BPTT)?",
-        "easyAnswer": "BPTT is how we train RNNs. We 'unroll' the network through time, treat each time step as a layer, then apply regular backpropagation. It's like flattening the RNN's timeline to calculate gradients.",
-        "detailedAnswer": "Backpropagation Through Time is the algorithm used to train RNNs by unrolling the network across time steps and applying standard backpropagation. The process: Unroll the RNN - Treat each time step as a separate layer in a feedforward network, Forward Pass - Compute outputs and hidden states for all time steps, Backward Pass - Compute gradients by propagating errors backward through time, Update Weights - Adjust parameters using accumulated gradients. BPTT can suffer from vanishing or exploding gradients over long sequences, making it difficult to capture long-term dependencies. This limitation led to the development of LSTM and GRU architectures. BPTT is computationally expensive for long sequences as it requires storing activations for all time steps and computing gradients through the entire sequence, but it's the fundamental training algorithm for traditional RNNs.",
-        "category": "technical",
+        "easyAnswer": "Backpropagation Through Time (BPTT) is the algorithm used to train Recurrent Neural Networks. It's an extension of the standard backpropagation algorithm that \"unrolls\" the RNN in time to calculate the gradients and update the weights.",
+        "detailedAnswer": "Backpropagation Through Time (BPTT) is the primary algorithm for training Recurrent Neural Networks. Since RNNs have recurrent connections, the gradient of the loss function at a particular time step depends on the previous time steps. BPTT \"unrolls\" the network through time, creating a large feedforward network where each layer represents a time step. Then, the standard backpropagation algorithm is applied to this unrolled network to compute the gradients and update the network's weights.",
+        "category": "deep-learning",
         "difficulty": "CHALLENGE",
-        "tags": [
-          "BPTT",
-          "backpropagation through time",
-          "RNN training",
-          "gradients",
-          "sequential learning"
-        ],
-        "order": 38,
-        "views": 0,
-        "helpful": 0,
-        "chapterId": null
+        "tags": ["BPTT", "backpropagation", "RNN", "training"]
       },
       {
         "question": "What is LSTM and how does it solve vanishing gradients?",
-        "easyAnswer": "LSTM (Long Short-Term Memory) is an advanced RNN with gates that control information flow. It has a cell state that acts like a conveyor belt, allowing gradients to flow unchanged across many time steps, solving the vanishing gradient problem.",
-        "detailedAnswer": "Long Short-Term Memory (LSTM) is an advanced RNN architecture designed to handle long-term dependencies and solve the vanishing gradient problem. LSTMs introduce a memory cell and three gates: Forget Gate - Decides what information to discard from the cell state, Input Gate - Determines what new information to add to the cell state, Output Gate - Controls what information from the cell state to output. The key innovation is the cell state, which provides a highway for gradients to flow unchanged across many time steps. The gates regulate information flow, allowing the network to preserve information over long sequences, selectively forget irrelevant information, and learn which information is important for predictions. This architecture enables LSTMs to capture dependencies spanning hundreds of time steps, making them effective for language modeling, machine translation, and other sequential tasks.",
-        "category": "technical",
+        "easyAnswer": "LSTM (Long Short-Term Memory) is a special type of RNN that is better at learning long-term dependencies in data. It solves the vanishing gradient problem by using special \"gates\" that control the flow of information, allowing important information to be remembered for longer periods.",
+        "detailedAnswer": "Long Short-Term Memory (LSTM) is a type of recurrent neural network architecture that is well-suited to learning from and making predictions on time series data. LSTMs are explicitly designed to avoid the long-term dependency problem. They do this by incorporating a memory cell and three \"gates\" (input, forget, and output gates) that regulate the flow of information into and out of the cell. This gating mechanism allows the network to remember information for long periods and helps to mitigate the vanishing gradient problem that can occur in traditional RNNs.",
+        "category": "deep-learning",
         "difficulty": "CHALLENGE",
-        "tags": [
-          "LSTM",
-          "long short-term memory",
-          "gates",
-          "cell state",
-          "vanishing gradients"
-        ],
-        "order": 39,
-        "views": 0,
-        "helpful": 0,
-        "chapterId": null
+        "tags": ["LSTM", "RNN", "vanishing gradients", "gates"]
       },
       {
         "question": "What is the difference between LSTM and GRU?",
-        "easyAnswer": "LSTM has three gates (forget, input, output) and separate cell state. GRU has two gates (reset, update) and combines cell state with hidden state. GRU is simpler and faster, LSTM might perform better on complex tasks.",
-        "detailedAnswer": "Both LSTM and GRU (Gated Recurrent Unit) are designed to handle long-term dependencies, but they differ in complexity and structure: LSTM has three gates: forget, input, and output, maintains separate cell state and hidden state, more parameters and computational complexity, better performance on tasks requiring precise memory control. GRU has two gates: reset and update, combines cell state and hidden state, fewer parameters, faster training, often performs comparably to LSTM on many tasks. GRU is generally preferred when computational resources are limited or when the dataset is smaller. LSTM may perform better on complex tasks requiring nuanced memory management. The choice between LSTM and GRU often depends on the specific task, dataset size, and computational constraints. In practice, both architectures have shown similar performance on many benchmarks, with GRU being slightly more efficient.",
-        "category": "technical",
+        "easyAnswer": "GRU (Gated Recurrent Unit) is a simpler version of LSTM. It has fewer gates and is therefore computationally more efficient, but it can perform similarly to LSTM on many tasks.",
+        "detailedAnswer": "Gated Recurrent Units (GRUs) and Long Short-Term Memory (LSTMs) are both types of recurrent neural networks that are designed to handle the vanishing gradient problem. The main difference is in their architecture. LSTMs have three gates (input, forget, and output) and a separate memory cell. GRUs have a simpler architecture with two gates (update and reset) and do not have a separate memory cell. This makes GRUs computationally more efficient and sometimes easier to train, while still being effective at capturing long-term dependencies.",
+        "category": "deep-learning",
         "difficulty": "PRACTICE",
-        "tags": [
-          "LSTM",
-          "GRU",
-          "gated recurrent units",
-          "comparison",
-          "RNN architectures"
-        ],
-        "order": 40,
-        "views": 0,
-        "helpful": 0,
-        "chapterId": null
+        "tags": ["LSTM", "GRU", "RNN", "comparison"]
       },
       {
         "question": "What is a Bidirectional RNN?",
-        "easyAnswer": "A Bidirectional RNN processes sequences in both directions - forward (past to future) and backward (future to past). It combines information from both directions for better context understanding. Requires the entire sequence upfront.",
-        "detailedAnswer": "A Bidirectional RNN processes sequences in both forward and backward directions, combining information from past and future contexts. It consists of: Forward RNN - Processes sequence from beginning to end, Backward RNN - Processes sequence from end to beginning, Output - Combines information from both directions. Advantages include captures context from entire sequence for each time step, improves performance on tasks where future context matters, widely used in named entity recognition, machine translation, and speech recognition. Limitation: Requires the entire sequence to be available, making them unsuitable for real-time streaming applications. Bidirectional RNNs are particularly useful in natural language processing tasks where understanding the full context of a sentence or document improves performance, such as sentiment analysis or named entity recognition.",
-        "category": "technical",
+        "easyAnswer": "A Bidirectional RNN processes sequential data in both forward and backward directions. This allows the network to have information from both past and future contexts when making a prediction at a specific time step.",
+        "detailedAnswer": "A Bidirectional Recurrent Neural Network (Bi-RNN) is a type of RNN that consists of two separate RNNs. One processes the input sequence in the forward direction (from beginning to end), and the other processes it in the backward direction (from end to beginning). The outputs of these two RNNs are then combined at each time step. This allows the network to have access to both past and future context when making predictions, which can be very beneficial for tasks like natural language processing.",
+        "category": "deep-learning",
         "difficulty": "PRACTICE",
-        "tags": [
-          "bidirectional RNN",
-          "context",
-          "future information",
-          "NLP",
-          "sequence processing"
-        ],
-        "order": 41,
-        "views": 0,
-        "helpful": 0,
-        "chapterId": null
+        "tags": ["bidirectional RNN", "RNN", "NLP"]
       },
       {
         "question": "What are the applications of RNNs in NLP?",
-        "easyAnswer": "RNNs are used for many NLP tasks: language modeling (predict next word), machine translation, sentiment analysis, text generation, speech recognition, and question answering. They excel at tasks where word order and context matter.",
-        "detailedAnswer": "RNNs and their variants (LSTM, GRU) have numerous NLP applications: Language Modeling - Predicting the next word in a sequence, used for text generation and autocomplete. Machine Translation - Converting text from one language to another using sequence-to-sequence models. Sentiment Analysis - Determining the emotional tone of text (positive, negative, neutral). Named Entity Recognition - Identifying and classifying entities (names, locations, organizations) in text. Text Summarization - Generating concise summaries of longer documents. Speech Recognition - Converting spoken language to text. Question Answering - Understanding questions and generating appropriate answers. While transformers have recently surpassed RNNs in many NLP tasks, RNNs remain relevant for certain applications, especially when computational resources are limited or for streaming applications where real-time processing is required.",
+        "easyAnswer": "RNNs are widely used in Natural Language Processing (NLP) for tasks like machine translation, sentiment analysis, text generation, speech recognition, and named entity recognition, due to their ability to handle sequential text data.",
+        "detailedAnswer": "Recurrent Neural Networks (RNNs) and their variants like LSTMs and GRUs are fundamental to many Natural Language Processing (NLP) tasks because of their ability to process sequential data. Some key applications include:\n* **Machine Translation:** Translating text from one language to another.\n* **Sentiment Analysis:** Determining the sentiment (positive, negative, neutral) of a piece of text.\n* **Text Generation:** Creating new text that is coherent and contextually relevant.\n* **Speech Recognition:** Converting spoken language into text.\n* **Named Entity Recognition:** Identifying and categorizing key information (entities) in text, such as names of people, organizations, and locations.",
         "category": "practical",
         "difficulty": "PRACTICE",
-        "tags": [
-          "RNN applications",
-          "NLP",
-          "language modeling",
-          "machine translation",
-          "text processing"
-        ],
-        "order": 42,
-        "views": 0,
-        "helpful": 0,
-        "chapterId": null
+        "tags": ["RNN applications", "NLP", "sequential data"]
       }
     ]
   }
