@@ -9,7 +9,7 @@ export const db =
   new PrismaClient({
     datasources: {
       db: {
-        url: `file:${process.cwd()}/prisma/db/custom.db`,
+        url: process.env.DATABASE_URL || `file:${process.cwd()}/prisma/db/custom.db`,
       },
     },
     log: ['query'],

@@ -50,6 +50,7 @@ server.log
 
 # database
 prisma/db
+prisma/db/custom.db
 
 # logs
 *.log
